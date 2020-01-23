@@ -1,0 +1,586 @@
+@font-face {
+  font-family: 'Sofia Pro Regular';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Regular-bd0a6d0d1ce78e95fb1629450636bc6f.otf");
+}
+@font-face {
+  font-family: 'Sofia Pro Italic';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Italic-d621fdcdc4f3a8e7c3d01eb8a452dba2.otf");
+}
+@font-face {
+  font-family: 'Sofia Pro Black';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Black-18eb57634a729a58f02ef1a2a21e98b9.otf");
+}
+@font-face {
+  font-family: 'Sofia Pro Black';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Black Italic-b748649c11454ad4b95bf618b5b1802c.otf");
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Sofia Pro Medium';
+  src: url('/static/fonts/Sofia Pro Medium.otf');
+}
+@font-face {
+  font-family: 'Sofia Pro Medium';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Medium Italic-7517a7e3ab525bfa34156e8555aa5d92.otf");
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Sofia Pro bold';
+  src: url("/_next/static/chunks/fonts/Sofia Pro bold-28b75bc6b4d35b59ecf476db59bc4ecf.otf");
+}
+@font-face {
+  font-family: 'Sofia Pro bold';
+  src: url("/_next/static/chunks/fonts/Sofia Pro bold Italic-30b728cd2215d41b0a5ebc5e5ccf6228.otf");
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Sofia Pro Semi bold';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Semi bold-a57bde9593a32d99ff54c3716859cc19.otf");
+}
+@font-face {
+  font-family: 'Sofia Pro Semi bold';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Semi bold-a57bde9593a32d99ff54c3716859cc19.otf");
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Sofia Pro Light';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Light-52fa5a506994382612ed5936f1e94660.otf");
+}
+@font-face {
+  font-family: 'Sofia Pro Light';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Light Italic-02d23a1ad786236c74c2afa06c589e34.otf");
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Sofia Pro Ultra Light';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Ultra Light-4bdc72d871a96c7a9bf467f5d5cff5f0.otf");
+}
+@font-face {
+  font-family: 'Sofia Pro Ultra Light';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Ultra Light Italic-6bd7b751c9b9e39cbc3205c9adead5a9.otf");
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Sofia Pro Extra Light';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Extra Light-8b590b229ee431c83a27e8930ad80781.otf");
+}
+@font-face {
+  font-family: 'Sofia Pro Extra Light';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Extra Light Italic-36ddf111eefa96731c7064c7f20ee579.otf");
+  font-style: italic;
+}
+.main-color___EG-zS {
+  color: #212772;
+}
+.split-line-color___3LrYH {
+  color: #000000;
+}
+body {
+  margin: 0;
+  user-select: none;
+}
+.layout___3KKqz {
+  width: 1600px;
+  margin: 0 auto;
+  margin-top: 52.5px;
+  margin-bottom: 180px;
+}
+
+@font-face {
+  font-family: 'Sofia Pro Regular';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Regular-bd0a6d0d1ce78e95fb1629450636bc6f.otf");
+}
+@font-face {
+  font-family: 'Sofia Pro Italic';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Italic-d621fdcdc4f3a8e7c3d01eb8a452dba2.otf");
+}
+@font-face {
+  font-family: 'Sofia Pro Black';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Black-18eb57634a729a58f02ef1a2a21e98b9.otf");
+}
+@font-face {
+  font-family: 'Sofia Pro Black';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Black Italic-b748649c11454ad4b95bf618b5b1802c.otf");
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Sofia Pro Medium';
+  src: url('/static/fonts/Sofia Pro Medium.otf');
+}
+@font-face {
+  font-family: 'Sofia Pro Medium';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Medium Italic-7517a7e3ab525bfa34156e8555aa5d92.otf");
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Sofia Pro bold';
+  src: url("/_next/static/chunks/fonts/Sofia Pro bold-28b75bc6b4d35b59ecf476db59bc4ecf.otf");
+}
+@font-face {
+  font-family: 'Sofia Pro bold';
+  src: url("/_next/static/chunks/fonts/Sofia Pro bold Italic-30b728cd2215d41b0a5ebc5e5ccf6228.otf");
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Sofia Pro Semi bold';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Semi bold-a57bde9593a32d99ff54c3716859cc19.otf");
+}
+@font-face {
+  font-family: 'Sofia Pro Semi bold';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Semi bold-a57bde9593a32d99ff54c3716859cc19.otf");
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Sofia Pro Light';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Light-52fa5a506994382612ed5936f1e94660.otf");
+}
+@font-face {
+  font-family: 'Sofia Pro Light';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Light Italic-02d23a1ad786236c74c2afa06c589e34.otf");
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Sofia Pro Ultra Light';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Ultra Light-4bdc72d871a96c7a9bf467f5d5cff5f0.otf");
+}
+@font-face {
+  font-family: 'Sofia Pro Ultra Light';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Ultra Light Italic-6bd7b751c9b9e39cbc3205c9adead5a9.otf");
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Sofia Pro Extra Light';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Extra Light-8b590b229ee431c83a27e8930ad80781.otf");
+}
+@font-face {
+  font-family: 'Sofia Pro Extra Light';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Extra Light Italic-36ddf111eefa96731c7064c7f20ee579.otf");
+  font-style: italic;
+}
+.main-color___1ATyE {
+  color: #212772;
+}
+.split-line-color___9hkSs {
+  color: #000000;
+}
+.layout-menu-container___11U8b {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.layout-menu-item___zoOMp {
+  line-height: 32px;
+  font-family: 'Sofia Pro Bold', 'Sofia Pro', Serif;
+  font-style: italic;
+  color: #212772;
+  cursor: pointer;
+}
+.layout-slider___15Qhc {
+  margin-top: 6px;
+  height: 16px;
+}
+.layout-slider-line___JbK2f {
+  width: 1600px;
+  height: 1px;
+  background-color: #000000;
+}
+.layout-slider-dot___2OqTm {
+  transition: 0.6s ease-in-out;
+  float: left;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  background-color: #212772;
+  border-radius: 50%;
+}
+
+@font-face {
+  font-family: 'Sofia Pro Regular';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Regular-bd0a6d0d1ce78e95fb1629450636bc6f.otf");
+}
+@font-face {
+  font-family: 'Sofia Pro Italic';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Italic-d621fdcdc4f3a8e7c3d01eb8a452dba2.otf");
+}
+@font-face {
+  font-family: 'Sofia Pro Black';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Black-18eb57634a729a58f02ef1a2a21e98b9.otf");
+}
+@font-face {
+  font-family: 'Sofia Pro Black';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Black Italic-b748649c11454ad4b95bf618b5b1802c.otf");
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Sofia Pro Medium';
+  src: url('/static/fonts/Sofia Pro Medium.otf');
+}
+@font-face {
+  font-family: 'Sofia Pro Medium';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Medium Italic-7517a7e3ab525bfa34156e8555aa5d92.otf");
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Sofia Pro bold';
+  src: url("/_next/static/chunks/fonts/Sofia Pro bold-28b75bc6b4d35b59ecf476db59bc4ecf.otf");
+}
+@font-face {
+  font-family: 'Sofia Pro bold';
+  src: url("/_next/static/chunks/fonts/Sofia Pro bold Italic-30b728cd2215d41b0a5ebc5e5ccf6228.otf");
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Sofia Pro Semi bold';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Semi bold-a57bde9593a32d99ff54c3716859cc19.otf");
+}
+@font-face {
+  font-family: 'Sofia Pro Semi bold';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Semi bold-a57bde9593a32d99ff54c3716859cc19.otf");
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Sofia Pro Light';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Light-52fa5a506994382612ed5936f1e94660.otf");
+}
+@font-face {
+  font-family: 'Sofia Pro Light';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Light Italic-02d23a1ad786236c74c2afa06c589e34.otf");
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Sofia Pro Ultra Light';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Ultra Light-4bdc72d871a96c7a9bf467f5d5cff5f0.otf");
+}
+@font-face {
+  font-family: 'Sofia Pro Ultra Light';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Ultra Light Italic-6bd7b751c9b9e39cbc3205c9adead5a9.otf");
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Sofia Pro Extra Light';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Extra Light-8b590b229ee431c83a27e8930ad80781.otf");
+}
+@font-face {
+  font-family: 'Sofia Pro Extra Light';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Extra Light Italic-36ddf111eefa96731c7064c7f20ee579.otf");
+  font-style: italic;
+}
+.main-color___1vwFq {
+  color: #212772;
+}
+.split-line-color___1RwQl {
+  color: #000000;
+}
+.banner-container___2iee0 {
+  margin-top: 117px;
+  margin-bottom: 100px;
+}
+.title___14UTd {
+  display: flex;
+}
+.picture___3K3mg {
+  width: 741px;
+  height: 373px;
+}
+.name___2o-lr {
+  display: inline-block;
+  margin-left: 60px;
+}
+.name___2o-lr .welcome___29rMH {
+  display: table-cell;
+  vertical-align: bottom;
+  height: 52px;
+  line-height: 35px;
+  font-size: 26.4px;
+  font-family: "Sofia Pro Light";
+  color: #000000;
+}
+.name___2o-lr .actual-name___1r6DP {
+  margin-top: 71px;
+  transform: translateX(-7.5px);
+}
+.name___2o-lr .actual-name___1r6DP span {
+  font-size: 108px;
+  line-height: 108px;
+  height: 108px;
+  color: #212772;
+}
+.name___2o-lr .actual-name___1r6DP .chinese-name___2k66j {
+  font-family: "Sofia Pro Black";
+}
+.name___2o-lr .actual-name___1r6DP .english-name___ti-Rj {
+  font-family: "Sofia Pro Ultra Light";
+}
+.name___2o-lr .who-am-i___3WFNN {
+  font-size: 26.4px;
+  line-height: 35px;
+  font-family: "Sofia Pro Light";
+}
+.metaphor___ecs05 {
+  margin-top: 27px;
+  font-family: 'Sofia Pro Bold', 'Sofia Pro', Serif;
+  font-style: italic;
+  color: #212772;
+  font-size: 23px;
+  line-height: 23px;
+}
+
+@font-face {
+  font-family: 'Sofia Pro Regular';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Regular-bd0a6d0d1ce78e95fb1629450636bc6f.otf");
+}
+@font-face {
+  font-family: 'Sofia Pro Italic';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Italic-d621fdcdc4f3a8e7c3d01eb8a452dba2.otf");
+}
+@font-face {
+  font-family: 'Sofia Pro Black';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Black-18eb57634a729a58f02ef1a2a21e98b9.otf");
+}
+@font-face {
+  font-family: 'Sofia Pro Black';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Black Italic-b748649c11454ad4b95bf618b5b1802c.otf");
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Sofia Pro Medium';
+  src: url('/static/fonts/Sofia Pro Medium.otf');
+}
+@font-face {
+  font-family: 'Sofia Pro Medium';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Medium Italic-7517a7e3ab525bfa34156e8555aa5d92.otf");
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Sofia Pro bold';
+  src: url("/_next/static/chunks/fonts/Sofia Pro bold-28b75bc6b4d35b59ecf476db59bc4ecf.otf");
+}
+@font-face {
+  font-family: 'Sofia Pro bold';
+  src: url("/_next/static/chunks/fonts/Sofia Pro bold Italic-30b728cd2215d41b0a5ebc5e5ccf6228.otf");
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Sofia Pro Semi bold';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Semi bold-a57bde9593a32d99ff54c3716859cc19.otf");
+}
+@font-face {
+  font-family: 'Sofia Pro Semi bold';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Semi bold-a57bde9593a32d99ff54c3716859cc19.otf");
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Sofia Pro Light';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Light-52fa5a506994382612ed5936f1e94660.otf");
+}
+@font-face {
+  font-family: 'Sofia Pro Light';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Light Italic-02d23a1ad786236c74c2afa06c589e34.otf");
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Sofia Pro Ultra Light';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Ultra Light-4bdc72d871a96c7a9bf467f5d5cff5f0.otf");
+}
+@font-face {
+  font-family: 'Sofia Pro Ultra Light';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Ultra Light Italic-6bd7b751c9b9e39cbc3205c9adead5a9.otf");
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Sofia Pro Extra Light';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Extra Light-8b590b229ee431c83a27e8930ad80781.otf");
+}
+@font-face {
+  font-family: 'Sofia Pro Extra Light';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Extra Light Italic-36ddf111eefa96731c7064c7f20ee579.otf");
+  font-style: italic;
+}
+.main-color___HghB8 {
+  color: #212772;
+}
+.split-line-color___2oU8J {
+  color: #000000;
+}
+.pharse-body___1jZ7O {
+  border-top: 1px solid #000000;
+  padding-top: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+.contact-container___1K470 {
+  border-top: 1px solid #000000;
+  padding-top: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-container___3GTzi {
+  display: flex;
+  flex-direction: column;
+}
+.info___1C7pF {
+  margin-top: 10px;
+  line-height: 20px;
+  font-size: 20px;
+  font-family: "Sofia Pro Medium";
+  justify-self: flex-end;
+}
+
+@font-face {
+  font-family: 'Sofia Pro Regular';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Regular-bd0a6d0d1ce78e95fb1629450636bc6f.otf");
+}
+@font-face {
+  font-family: 'Sofia Pro Italic';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Italic-d621fdcdc4f3a8e7c3d01eb8a452dba2.otf");
+}
+@font-face {
+  font-family: 'Sofia Pro Black';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Black-18eb57634a729a58f02ef1a2a21e98b9.otf");
+}
+@font-face {
+  font-family: 'Sofia Pro Black';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Black Italic-b748649c11454ad4b95bf618b5b1802c.otf");
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Sofia Pro Medium';
+  src: url('/static/fonts/Sofia Pro Medium.otf');
+}
+@font-face {
+  font-family: 'Sofia Pro Medium';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Medium Italic-7517a7e3ab525bfa34156e8555aa5d92.otf");
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Sofia Pro bold';
+  src: url("/_next/static/chunks/fonts/Sofia Pro bold-28b75bc6b4d35b59ecf476db59bc4ecf.otf");
+}
+@font-face {
+  font-family: 'Sofia Pro bold';
+  src: url("/_next/static/chunks/fonts/Sofia Pro bold Italic-30b728cd2215d41b0a5ebc5e5ccf6228.otf");
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Sofia Pro Semi bold';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Semi bold-a57bde9593a32d99ff54c3716859cc19.otf");
+}
+@font-face {
+  font-family: 'Sofia Pro Semi bold';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Semi bold-a57bde9593a32d99ff54c3716859cc19.otf");
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Sofia Pro Light';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Light-52fa5a506994382612ed5936f1e94660.otf");
+}
+@font-face {
+  font-family: 'Sofia Pro Light';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Light Italic-02d23a1ad786236c74c2afa06c589e34.otf");
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Sofia Pro Ultra Light';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Ultra Light-4bdc72d871a96c7a9bf467f5d5cff5f0.otf");
+}
+@font-face {
+  font-family: 'Sofia Pro Ultra Light';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Ultra Light Italic-6bd7b751c9b9e39cbc3205c9adead5a9.otf");
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Sofia Pro Extra Light';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Extra Light-8b590b229ee431c83a27e8930ad80781.otf");
+}
+@font-face {
+  font-family: 'Sofia Pro Extra Light';
+  src: url("/_next/static/chunks/fonts/Sofia Pro Extra Light Italic-36ddf111eefa96731c7064c7f20ee579.otf");
+  font-style: italic;
+}
+.main-color___-a4BP {
+  color: #212772;
+}
+.split-line-color___1NAD8 {
+  color: #000000;
+}
+.main___dFapN {
+  margin-top: 80px;
+}
+.main___dFapN .pharse-title___KDx0B {
+  font-family: "Sofia Pro Ultra Light";
+  color: #212772;
+  font-size: 23px;
+  line-height: 23px;
+  margin-bottom: 8px;
+}
+.main___dFapN .pharse-main-body___1AkK2 {
+  border-top: 1px solid #000000;
+  padding-top: 14px;
+}
+.main___dFapN .pharse-container___2lkOx {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-container___DmMR0 {
+  display: flex;
+  flex-direction: column;
+}
+.info___31OhC {
+  margin-top: 10px;
+  line-height: 20px;
+  font-size: 20px;
+  font-family: "Sofia Pro Medium";
+  justify-self: flex-end;
+}
+
+.info-container___gv01a {
+  display: flex;
+  flex-direction: column;
+}
+.info___1C4Oe {
+  margin-top: 10px;
+  line-height: 20px;
+  font-size: 20px;
+  font-family: "Sofia Pro Light";
+  font-style: italic;
+  justify-self: flex-end;
+}
+
+.info-container___3jIr7 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4px;
+}
+.info___2-8k- {
+  height: 16px;
+  text-align: left;
+  padding-top: 10px;
+  line-height: 20px;
+  font-size: 20px;
+  font-family: "Sofia Pro Ultra Light";
+  justify-self: flex-end;
+  padding-left: 7px;
+  border-left: 1px solid #616161;
+  margin-left: 28px;
+  color: #616161;
+}
+.info___2-8k-:nth-of-type(1) {
+  padding-top: 0;
+  margin-top: 10px;
+}
+
+.main___3sGd6 {
+  margin: 0 auto;
+  display: table-cell;
+  vertical-align: middle;
+  height: 30vh;
+  width: 1600px;
+  text-align: center;
+  padding-top: 180px;
+  font-family: "Sofia Pro Black";
+  font-size: 30px;
+  color: #212772;
+}
+
