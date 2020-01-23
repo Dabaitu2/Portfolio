@@ -2,14 +2,25 @@ import * as React from 'react';
 import styles from './index.less';
 import LayoutHeader from '../components/LayoutHeader';
 import Profile from '../components/Profile';
-import { CurrentTabProvider } from '../utils/hooks/useCurrentTab';
+import {
+  CurrentTabProvider,
+  useCurrentTab
+} from '../utils/hooks/useCurrentTab';
 import Projects from '../components/Projects';
 import { ContentSwitcher } from '../components/ContentSwitcher';
-import { useEffect, useRef, useState } from 'react';
-
-const Layout: React.FC<{}> = () => {
-  const containerRef = useRef(null);
-  useEffect(() => {
+import { useComponentDidMount } from '../utils/hooks/useComponentDidMount';
+import { useEffect } from 'react';
+import { useResizeCallback } from '../utils/hooks/useResizeCallback';
+const DESIGN_WIDTH = 1920;
+const InnerLayout: React.FC<{}> = () => {
+  const {
+    state: {
+      scale: { scale }
+    },
+    actions: { setScale }
+  } = useCurrentTab();
+  const fallBackReactive = () => {
+    setScale(1);
     const scale = Math.min(document.body.clientWidth / 1920, 1);
     let metaEl = document.querySelector('meta[name="viewport"]');
     if (!metaEl) {
@@ -42,23 +53,52 @@ const Layout: React.FC<{}> = () => {
     window.scrollTo({
       top: 0
     });
-  }, [containerRef.current]);
+  };
+  const { IsDone } = useComponentDidMount(() => {
+    if (window.innerWidth >= 700) {
+      const scale = Math.min(document.body.clientWidth / DESIGN_WIDTH, 1);
+      setScale(scale);
+    } else {
+      fallBackReactive();
+    }
+    addCallback(() => {
+      const scale = Math.min(document.body.clientWidth / DESIGN_WIDTH, 1);
+      document.getElementsByTagName('html')[0].style.fontSize = `${scale}px`;
+      window.scrollTo({
+        top: 0
+      });
+      setScale(scale);
+    });
+  });
+  useEffect(() => {
+    document.getElementsByTagName('html')[0].style.fontSize = `${scale}px`;
+    window.scrollTo({
+      top: 0
+    });
+  }, [scale]);
+  const { addCallback } = useResizeCallback(fallBackReactive);
+  return IsDone ? (
+    <div className={styles.layout}>
+      <LayoutHeader />
+      <ContentSwitcher>
+        <>
+          <Profile />
+          <Projects />
+        </>
+      </ContentSwitcher>
+      <LayoutHeader
+        bodyStyle={{
+          marginTop: '138rem'
+        }}
+      />
+    </div>
+  ) : null;
+};
+
+const Layout: React.FC<{}> = () => {
   return (
     <CurrentTabProvider>
-      <div className={styles.layout}>
-        <LayoutHeader />
-        <ContentSwitcher>
-          <>
-            <Profile />
-            <Projects />
-          </>
-        </ContentSwitcher>
-        <LayoutHeader
-          bodyStyle={{
-            marginTop: '138px'
-          }}
-        />
-      </div>
+      <InnerLayout />
     </CurrentTabProvider>
   );
 };

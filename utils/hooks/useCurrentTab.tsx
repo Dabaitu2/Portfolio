@@ -1,9 +1,11 @@
-import React, { Context, useContext } from 'react';
-import exp from 'constants';
+import React from 'react';
 
-const store = {
+let initStore = {
   currentTab: {
     currentTab: 0
+  },
+  scale: {
+    scale: 1
   },
   test: {
     count: 0
@@ -26,6 +28,14 @@ const test = (state, action) => {
   }
 };
 
+const scale = (state, action) => {
+  if (action.type === 'setScale') {
+    return { ...state, scale: action.value };
+  } else {
+    return state;
+  }
+};
+
 // 自定义合并reducer函数
 // 根据reducer定义的名称，拿到state中的对应名称下的state
 // state 也是一个复合 state
@@ -38,7 +48,7 @@ const combineReducers = reducers => (state, action) =>
     // 整合出新state返回，看起来就像是一个reducer在干活
     .reduce((acc, cur) => Object.assign({}, acc, cur));
 
-const reducers = combineReducers({ currentTab, test });
+const reducers = combineReducers({ currentTab, test, scale });
 
 export function createCurrentTab() {
   const CurrentTabContext = React.createContext<{
@@ -46,10 +56,13 @@ export function createCurrentTab() {
     actions: any;
   }>(null);
   function CurrentTabProvider(props: { children: any }) {
-    const [state, dispatch] = React.useReducer(reducers, store);
+    const [state, dispatch] = React.useReducer(reducers, initStore);
     const actions = {
       setCurrentTab: e => {
         dispatch({ type: 'setCurrentTab', value: e });
+      },
+      setScale: e => {
+        dispatch({ type: 'setScale', value: e });
       }
     };
     return (

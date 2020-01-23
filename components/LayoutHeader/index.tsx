@@ -1,14 +1,9 @@
 import * as React from 'react';
 import styles from './index.module.less';
-import {
-  CSSProperties,
-  useCallback,
-  useContext,
-  useEffect,
-  useRef,
-  useState
-} from 'react';
+import { CSSProperties, useCallback, useEffect, useRef, useState } from 'react';
 import { useCurrentTab } from '../../utils/hooks/useCurrentTab';
+import { useComponentDidMount } from '../../utils/hooks/useComponentDidMount';
+import { useResizeCallback } from '../../utils/hooks/useResizeCallback';
 
 interface MenuItem {
   key: string;
@@ -37,21 +32,30 @@ const MenuItems: MenuItem[] = [
 const LayoutHeader: React.FC<IProps> = props => {
   const {
     state: {
-      currentTab: { currentTab }
+      currentTab: { currentTab },
+      scale: { scale }
     },
     actions: { setCurrentTab }
   } = useCurrentTab();
   // 设置小圆点的位置
-  const [firstLoaded, setFirstLoaded] = useState(false);
   const [dotX, setDotX] = useState(0);
   const bodyWidth = useRef(null);
   const _MenuItems = MenuItems.map(item => ({
     ...item,
     ref: React.useRef()
   }));
+  const { addCallback } = useResizeCallback();
+  const { IsDone } = useComponentDidMount(() => {
+    bodyWidth.current = document.getElementsByTagName('body')[0].offsetWidth;
+    menuItemClickHandler(_MenuItems[currentTab])();
+    addCallback(() => {
+      bodyWidth.current = document.getElementsByTagName('body')[0].offsetWidth;
+      menuItemClickHandler(_MenuItems[currentTab])();
+    });
+  });
   const menuItemClickHandler = useCallback(
     item => () => {
-      if (!firstLoaded) {
+      if (!IsDone) {
         return;
       }
       const findIndex = _MenuItems.findIndex(m => {
@@ -60,30 +64,19 @@ const LayoutHeader: React.FC<IProps> = props => {
       if (!~findIndex) {
         return;
       }
-      const pageOffSetLeft = (bodyWidth.current - 1600) / 2;
+      const pageOffSetLeft = (bodyWidth.current - 1600 * scale) / 2;
       const offsetLeft = item.ref.current.offsetLeft;
       const offsetWidth = item.ref.current.offsetWidth;
-      setDotX(offsetLeft + offsetWidth / 2 - pageOffSetLeft - 8);
+      setDotX((offsetLeft + offsetWidth / 2 - pageOffSetLeft - 8) / scale);
       setCurrentTab(findIndex);
     },
-    [bodyWidth, firstLoaded]
+    [bodyWidth, IsDone, scale]
   );
-  // 判断是否是第一次渲染
   useEffect(() => {
-    if (!firstLoaded) {
-      setFirstLoaded(true);
-    }
-  }, []);
-  // 根据不是第一次渲染，来模拟componentDidMount 拿document 对象
-  useEffect(() => {
-    if (firstLoaded) {
-      bodyWidth.current = document.getElementsByTagName('body')[0].offsetWidth;
+    if (IsDone) {
       menuItemClickHandler(_MenuItems[currentTab])();
     }
-  }, [firstLoaded]);
-  useEffect(() => {
-    menuItemClickHandler(_MenuItems[currentTab])();
-  }, [currentTab]);
+  }, [currentTab, scale, IsDone]);
   return (
     <div style={props.bodyStyle ?? {}}>
       <div className={styles['layout-menu-container']}>
@@ -102,7 +95,7 @@ const LayoutHeader: React.FC<IProps> = props => {
         <span
           className={styles['layout-slider-dot']}
           style={{
-            transform: `translate(${dotX}px, -8px)`
+            transform: `translate(${dotX}rem, -8rem)`
           }}
         />
         <div className={styles['layout-slider-line']} />

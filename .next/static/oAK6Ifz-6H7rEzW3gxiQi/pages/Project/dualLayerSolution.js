@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{"4GiU":function(n,e,t){(window.__NEXT_P=window.__NEXT_P||[]).push(["/Project/dualLayerSolution",function(){return t("CeB0")}])},CeB0:function(n,e,t){"use strict";t.r(e);var i=t("q1tI"),o=t.n(i).a.createElement;e.default=function(n){return o("div",null)}}},[["4GiU",0,2,1]]]);

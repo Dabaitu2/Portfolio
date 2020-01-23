@@ -80,10 +80,10 @@ body {
   user-select: none;
 }
 .layout___3KKqz {
-  width: 1600px;
+  width: 1600rem;
   margin: 0 auto;
-  margin-top: 52.5px;
-  margin-bottom: 180px;
+  margin-top: 52.5rem;
+  margin-bottom: 180rem;
 }
 
 @font-face {
@@ -169,29 +169,33 @@ body {
   align-items: center;
 }
 .layout-menu-item___zoOMp {
-  line-height: 32px;
+  font-size: 23rem;
+  line-height: 32rem;
   font-family: 'Sofia Pro Bold', 'Sofia Pro', Serif;
   font-style: italic;
   color: #212772;
   cursor: pointer;
 }
 .layout-slider___15Qhc {
-  margin-top: 6px;
-  height: 16px;
+  margin-top: 6rem;
+  height: 16rem;
 }
 .layout-slider-line___JbK2f {
   width: 100%;
-  height: 1px;
+  height: 1rem;
   background-color: #000000;
 }
 .layout-slider-dot___2OqTm {
-  transition: 0.6s ease-in-out;
   float: left;
   display: inline-block;
-  height: 16px;
-  width: 16px;
+  height: 16rem;
+  width: 16rem;
   background-color: #212772;
   border-radius: 50%;
+  transition: 0.6s ease-in-out;
+}
+.animated___3Ynd9 {
+  transition: 0.6s ease-in-out;
 }
 
 @font-face {
@@ -272,37 +276,37 @@ body {
   color: #000000;
 }
 .banner-container___2iee0 {
-  margin-top: 117px;
-  margin-bottom: 100px;
+  margin-top: 117rem;
+  margin-bottom: 100rem;
 }
 .title___14UTd {
   display: flex;
 }
 .picture___3K3mg {
-  width: 741px;
-  height: 373px;
+  width: 741rem;
+  height: 373rem;
 }
 .name___2o-lr {
   display: inline-block;
-  margin-left: 60px;
+  margin-left: 60rem;
 }
 .name___2o-lr .welcome___29rMH {
   display: table-cell;
   vertical-align: bottom;
-  height: 52px;
-  line-height: 35px;
-  font-size: 26.4px;
+  height: 52rem;
+  line-height: 35rem;
+  font-size: 26.4rem;
   font-family: "Sofia Pro Light";
   color: #000000;
 }
 .name___2o-lr .actual-name___1r6DP {
-  margin-top: 71px;
-  transform: translateX(-7.5px);
+  margin-top: 71rem;
+  transform: translateX(-7.5rem);
 }
 .name___2o-lr .actual-name___1r6DP span {
-  font-size: 108px;
-  line-height: 108px;
-  height: 108px;
+  font-size: 108rem;
+  line-height: 108rem;
+  height: 108rem;
   color: #212772;
 }
 .name___2o-lr .actual-name___1r6DP .chinese-name___2k66j {
@@ -312,17 +316,17 @@ body {
   font-family: "Sofia Pro Ultra Light";
 }
 .name___2o-lr .who-am-i___3WFNN {
-  font-size: 26.4px;
-  line-height: 35px;
+  font-size: 26.4rem;
+  line-height: 35rem;
   font-family: "Sofia Pro Light";
 }
 .metaphor___ecs05 {
-  margin-top: 27px;
+  margin-top: 27rem;
   font-family: 'Sofia Pro Bold', 'Sofia Pro', Serif;
   font-style: italic;
   color: #212772;
-  font-size: 23px;
-  line-height: 23px;
+  font-size: 23rem;
+  line-height: 23rem;
 }
 
 @font-face {
@@ -403,14 +407,14 @@ body {
   color: #000000;
 }
 .pharse-body___1jZ7O {
-  border-top: 1px solid #000000;
-  padding-top: 14px;
+  border-top: 1rem solid #000000;
+  padding-top: 14rem;
   display: flex;
   justify-content: space-between;
 }
 .contact-container___1K470 {
-  border-top: 1px solid #000000;
-  padding-top: 14px;
+  border-top: 1rem solid #000000;
+  padding-top: 14rem;
   display: flex;
   justify-content: space-between;
 }
@@ -420,9 +424,9 @@ body {
   flex-direction: column;
 }
 .info___1C7pF {
-  margin-top: 10px;
-  line-height: 20px;
-  font-size: 20px;
+  margin-top: 10rem;
+  line-height: 20rem;
+  font-size: 20rem;
   font-family: "Sofia Pro Medium";
   justify-self: flex-end;
 }
@@ -505,18 +509,18 @@ body {
   color: #000000;
 }
 .main___dFapN {
-  margin-top: 80px;
+  margin-top: 80rem;
 }
 .main___dFapN .pharse-title___KDx0B {
   font-family: "Sofia Pro Ultra Light";
   color: #212772;
-  font-size: 23px;
-  line-height: 23px;
-  margin-bottom: 8px;
+  font-size: 23rem;
+  line-height: 23rem;
+  margin-bottom: 8rem;
 }
 .main___dFapN .pharse-main-body___1AkK2 {
-  border-top: 1px solid #000000;
-  padding-top: 14px;
+  border-top: 1rem solid #000000;
+  padding-top: 14rem;
 }
 .main___dFapN .pharse-container___2lkOx {
   display: flex;
@@ -528,9 +532,8 @@ body {
   flex-direction: column;
 }
 .info___31OhC {
-  margin-top: 10px;
-  line-height: 20px;
-  font-size: 20px;
+  margin-top: 10rem;
+  font-size: 20rem;
   font-family: "Sofia Pro Medium";
   justify-self: flex-end;
 }
@@ -540,9 +543,9 @@ body {
   flex-direction: column;
 }
 .info___1C4Oe {
-  margin-top: 10px;
-  line-height: 20px;
-  font-size: 20px;
+  margin-top: 10rem;
+  line-height: 20rem;
+  font-size: 20rem;
   font-family: "Sofia Pro Light";
   font-style: italic;
   justify-self: flex-end;
@@ -551,24 +554,24 @@ body {
 .info-container___3jIr7 {
   display: flex;
   flex-direction: column;
-  margin-top: 4px;
+  margin-top: 4rem;
 }
 .info___2-8k- {
-  height: 16px;
+  height: 16rem;
   text-align: left;
-  padding-top: 10px;
-  line-height: 20px;
-  font-size: 20px;
+  padding-top: 10rem;
+  line-height: 20rem;
+  font-size: 20rem;
   font-family: "Sofia Pro Ultra Light";
   justify-self: flex-end;
-  padding-left: 7px;
-  border-left: 1px solid #616161;
-  margin-left: 28px;
+  padding-left: 7rem;
+  border-left: 1rem solid #616161;
+  margin-left: 28rem;
   color: #616161;
 }
 .info___2-8k-:nth-of-type(1) {
   padding-top: 0;
-  margin-top: 10px;
+  margin-top: 10rem;
 }
 
 .main___3sGd6 {
@@ -576,11 +579,11 @@ body {
   display: table-cell;
   vertical-align: middle;
   height: 30vh;
-  width: 1600px;
+  width: 1600rem;
   text-align: center;
-  padding-top: 180px;
+  padding-top: 180rem;
   font-family: "Sofia Pro Black";
-  font-size: 30px;
+  font-size: 30rem;
   color: #212772;
 }
 

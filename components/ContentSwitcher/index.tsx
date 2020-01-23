@@ -14,15 +14,15 @@ export const ContentSwitcher: FC<IProps> = (props: IProps) => {
   return (
     <div
       style={{
-        width: '1600px',
+        width: '1600rem',
         overflowX: 'hidden'
       }}
     >
       <div
         style={{
-          width: '3200px',
+          width: '3200rem',
           display: 'flex',
-          transform: `translateX(-${currentTab * 1600}px)`,
+          transform: `translateX(-${currentTab * 1600}rem)`,
           transition: '0.6s ease-in-out'
         }}
       >

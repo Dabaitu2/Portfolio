@@ -19,7 +19,7 @@ const Phrase: React.FC<IProps> = props => {
             key={i.title[0]}
             className={styles['pharse-container']}
             style={{
-              marginBottom: bottomGap ?? '58px'
+              marginBottom: bottomGap ?? '58rem'
             }}
           >
             <PharseInformation info={i} />

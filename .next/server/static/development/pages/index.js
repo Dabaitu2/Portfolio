@@ -120,7 +120,7 @@ const ContentSwitcher = props => {
   } = Object(_utils_hooks_useCurrentTab__WEBPACK_IMPORTED_MODULE_1__["useCurrentTab"])();
   return __jsx("div", {
     style: {
-      width: '1600px',
+      width: '1600rem',
       overflowX: 'hidden'
     },
     __source: {
@@ -130,9 +130,9 @@ const ContentSwitcher = props => {
     __self: undefined
   }, __jsx("div", {
     style: {
-      width: '3200px',
+      width: '3200rem',
       display: 'flex',
-      transform: `translateX(-${currentTab * 1600}px)`,
+      transform: `translateX(-${currentTab * 1600}rem)`,
       transition: '0.6s ease-in-out'
     },
     __source: {
@@ -159,7 +159,8 @@ module.exports = {
 	"layout-menu-item": "layout-menu-item___zoOMp",
 	"layout-slider": "layout-slider___15Qhc",
 	"layout-slider-line": "layout-slider-line___JbK2f",
-	"layout-slider-dot": "layout-slider-dot___2OqTm"
+	"layout-slider-dot": "layout-slider-dot___2OqTm",
+	"animated": "animated___3Ynd9"
 };
 
 /***/ }),
@@ -191,6 +192,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _index_module_less__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./index.module.less */ "./components/LayoutHeader/index.module.less");
 /* harmony import */ var _index_module_less__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_index_module_less__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var _utils_hooks_useCurrentTab__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../utils/hooks/useCurrentTab */ "./utils/hooks/useCurrentTab.tsx");
+/* harmony import */ var _utils_hooks_useComponentDidMount__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../utils/hooks/useComponentDidMount */ "./utils/hooks/useComponentDidMount.ts");
+/* harmony import */ var _utils_hooks_useResizeCallback__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../utils/hooks/useResizeCallback */ "./utils/hooks/useResizeCallback.ts");
 
 
 
@@ -204,6 +207,8 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_7__["createElement"];
 function ownKeys(object, enumerableOnly) { var keys = _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_5___default()(object); if (_babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4___default.a) { var symbols = _babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4___default()(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return _babel_runtime_corejs2_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3___default()(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(target, key, source[key]); }); } else if (_babel_runtime_corejs2_core_js_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_2___default.a) { _babel_runtime_corejs2_core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_1___default()(target, _babel_runtime_corejs2_core_js_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_2___default()(source)); } else { ownKeys(Object(source)).forEach(function (key) { _babel_runtime_corejs2_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default()(target, key, _babel_runtime_corejs2_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3___default()(source, key)); }); } } return target; }
+
+
 
 
 
@@ -228,6 +233,9 @@ const LayoutHeader = props => {
     state: {
       currentTab: {
         currentTab
+      },
+      scale: {
+        scale
       }
     },
     actions: {
@@ -235,10 +243,6 @@ const LayoutHeader = props => {
     }
   } = Object(_utils_hooks_useCurrentTab__WEBPACK_IMPORTED_MODULE_9__["useCurrentTab"])(); // 设置小圆点的位置
 
-  const {
-    0: firstLoaded,
-    1: setFirstLoaded
-  } = Object(react__WEBPACK_IMPORTED_MODULE_7__["useState"])(false);
   const {
     0: dotX,
     1: setDotX
@@ -249,8 +253,21 @@ const LayoutHeader = props => {
     ref: react__WEBPACK_IMPORTED_MODULE_7__["useRef"]()
   }));
 
+  const {
+    addCallback
+  } = Object(_utils_hooks_useResizeCallback__WEBPACK_IMPORTED_MODULE_11__["useResizeCallback"])();
+  const {
+    IsDone
+  } = Object(_utils_hooks_useComponentDidMount__WEBPACK_IMPORTED_MODULE_10__["useComponentDidMount"])(() => {
+    bodyWidth.current = document.getElementsByTagName('body')[0].offsetWidth;
+    menuItemClickHandler(_MenuItems[currentTab])();
+    addCallback(() => {
+      bodyWidth.current = document.getElementsByTagName('body')[0].offsetWidth;
+      menuItemClickHandler(_MenuItems[currentTab])();
+    });
+  });
   const menuItemClickHandler = Object(react__WEBPACK_IMPORTED_MODULE_7__["useCallback"])(item => () => {
-    if (!firstLoaded) {
+    if (!IsDone) {
       return;
     }
 
@@ -262,40 +279,29 @@ const LayoutHeader = props => {
       return;
     }
 
-    const pageOffSetLeft = (bodyWidth.current - 1600) / 2;
+    const pageOffSetLeft = (bodyWidth.current - 1600 * scale) / 2;
     const offsetLeft = item.ref.current.offsetLeft;
     const offsetWidth = item.ref.current.offsetWidth;
-    setDotX(offsetLeft + offsetWidth / 2 - pageOffSetLeft - 8);
+    setDotX((offsetLeft + offsetWidth / 2 - pageOffSetLeft - 8) / scale);
     setCurrentTab(findIndex);
-  }, [bodyWidth, firstLoaded]); // 判断是否是第一次渲染
-
+  }, [bodyWidth, IsDone, scale]);
   Object(react__WEBPACK_IMPORTED_MODULE_7__["useEffect"])(() => {
-    if (!firstLoaded) {
-      setFirstLoaded(true);
-    }
-  }, []); // 根据不是第一次渲染，来模拟componentDidMount 拿document 对象
-
-  Object(react__WEBPACK_IMPORTED_MODULE_7__["useEffect"])(() => {
-    if (firstLoaded) {
-      bodyWidth.current = document.getElementsByTagName('body')[0].offsetWidth;
+    if (IsDone) {
       menuItemClickHandler(_MenuItems[currentTab])();
     }
-  }, [firstLoaded]);
-  Object(react__WEBPACK_IMPORTED_MODULE_7__["useEffect"])(() => {
-    menuItemClickHandler(_MenuItems[currentTab])();
-  }, [currentTab]);
+  }, [currentTab, scale, IsDone]);
   return __jsx("div", {
     style: (_props$bodyStyle = props.bodyStyle) !== null && _props$bodyStyle !== void 0 ? _props$bodyStyle : {},
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88
+      lineNumber: 81
     },
     __self: undefined
   }, __jsx("div", {
     className: _index_module_less__WEBPACK_IMPORTED_MODULE_8___default.a['layout-menu-container'],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 89
+      lineNumber: 82
     },
     __self: undefined
   }, _MenuItems.map(item => __jsx("span", {
@@ -305,31 +311,31 @@ const LayoutHeader = props => {
     onClick: menuItemClickHandler(item),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 91
+      lineNumber: 84
     },
     __self: undefined
   }, item.label))), __jsx("div", {
     className: _index_module_less__WEBPACK_IMPORTED_MODULE_8___default.a['layout-slider'],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 101
+      lineNumber: 94
     },
     __self: undefined
   }, __jsx("span", {
     className: _index_module_less__WEBPACK_IMPORTED_MODULE_8___default.a['layout-slider-dot'],
     style: {
-      transform: `translate(${dotX}px, -8px)`
+      transform: `translate(${dotX}rem, -8rem)`
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 102
+      lineNumber: 95
     },
     __self: undefined
   }), __jsx("div", {
     className: _index_module_less__WEBPACK_IMPORTED_MODULE_8___default.a['layout-slider-line'],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 108
+      lineNumber: 101
     },
     __self: undefined
   })));
@@ -605,7 +611,7 @@ const myInfo = [{
     time: ['2017']
   }],
   // 由于上下margin 重叠的规则，最后的Gap不会影响到存在大于 42 marginTop的下一个元素的margin展示，比如下一个是80，那么结果还是 42 & 80 = 80 而不会变成 122
-  bottomGap: '42px'
+  bottomGap: '42rem'
 }, {
   title: 'MANAGEMENT EXPERIENCE',
   info: [{
@@ -629,7 +635,7 @@ const myInfo = [{
 const Profile = () => {
   return __jsx("div", {
     style: {
-      width: '1600px'
+      width: '1600rem'
     },
     __source: {
       fileName: _jsxFileName,
@@ -904,7 +910,7 @@ const Phrase = props => {
     key: i.title[0],
     className: _index_module_less__WEBPACK_IMPORTED_MODULE_1___default.a['pharse-container'],
     style: {
-      marginBottom: bottomGap !== null && bottomGap !== void 0 ? bottomGap : '58px'
+      marginBottom: bottomGap !== null && bottomGap !== void 0 ? bottomGap : '58rem'
     },
     __source: {
       fileName: _jsxFileName,
@@ -1212,6 +1218,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _utils_hooks_useCurrentTab__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../utils/hooks/useCurrentTab */ "./utils/hooks/useCurrentTab.tsx");
 /* harmony import */ var _components_Projects__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Projects */ "./components/Projects/index.tsx");
 /* harmony import */ var _components_ContentSwitcher__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/ContentSwitcher */ "./components/ContentSwitcher/index.tsx");
+/* harmony import */ var _utils_hooks_useComponentDidMount__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../utils/hooks/useComponentDidMount */ "./utils/hooks/useComponentDidMount.ts");
+/* harmony import */ var _utils_hooks_useResizeCallback__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../utils/hooks/useResizeCallback */ "./utils/hooks/useResizeCallback.ts");
 var _jsxFileName = "/Users/tomokokawase/Desktop/Portfolio/pages/index.tsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0__["createElement"];
 
@@ -1223,9 +1231,23 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0__["createElement"];
 
 
 
-const Layout = () => {
-  const containerRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+
+const DESIGN_WIDTH = 1920;
+
+const InnerLayout = () => {
+  const {
+    state: {
+      scale: {
+        scale
+      }
+    },
+    actions: {
+      setScale
+    }
+  } = Object(_utils_hooks_useCurrentTab__WEBPACK_IMPORTED_MODULE_4__["useCurrentTab"])();
+
+  const fallBackReactive = () => {
+    setScale(1);
     const scale = Math.min(document.body.clientWidth / 1920, 1);
     let metaEl = document.querySelector('meta[name="viewport"]');
 
@@ -1241,57 +1263,141 @@ const Layout = () => {
     window.scrollTo({
       top: 0
     });
-  }, [containerRef.current]);
-  return __jsx(_utils_hooks_useCurrentTab__WEBPACK_IMPORTED_MODULE_4__["CurrentTabProvider"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 47
-    },
-    __self: undefined
-  }, __jsx("div", {
+  };
+
+  const {
+    IsDone
+  } = Object(_utils_hooks_useComponentDidMount__WEBPACK_IMPORTED_MODULE_7__["useComponentDidMount"])(() => {
+    if (window.innerWidth >= 700) {
+      const scale = Math.min(document.body.clientWidth / DESIGN_WIDTH, 1);
+      setScale(scale);
+    } else {
+      fallBackReactive();
+    }
+
+    addCallback(() => {
+      const scale = Math.min(document.body.clientWidth / DESIGN_WIDTH, 1);
+      document.getElementsByTagName('html')[0].style.fontSize = `${scale}px`;
+      window.scrollTo({
+        top: 0
+      });
+      setScale(scale);
+    });
+  });
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    document.getElementsByTagName('html')[0].style.fontSize = `${scale}px`;
+    window.scrollTo({
+      top: 0
+    });
+  }, [scale]);
+  const {
+    addCallback
+  } = Object(_utils_hooks_useResizeCallback__WEBPACK_IMPORTED_MODULE_8__["useResizeCallback"])(fallBackReactive);
+  return IsDone ? __jsx("div", {
     className: _index_less__WEBPACK_IMPORTED_MODULE_1___default.a.layout,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 81
     },
     __self: undefined
   }, __jsx(_components_LayoutHeader__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 82
     },
     __self: undefined
   }), __jsx(_components_ContentSwitcher__WEBPACK_IMPORTED_MODULE_6__["ContentSwitcher"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 83
     },
     __self: undefined
   }, __jsx(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], null, __jsx(_components_Profile__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 85
     },
     __self: undefined
   }), __jsx(_components_Projects__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 86
     },
     __self: undefined
   }))), __jsx(_components_LayoutHeader__WEBPACK_IMPORTED_MODULE_2__["default"], {
     bodyStyle: {
-      marginTop: '138px'
+      marginTop: '138rem'
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 89
     },
     __self: undefined
-  })));
+  })) : null;
+};
+
+const Layout = () => {
+  return __jsx(_utils_hooks_useCurrentTab__WEBPACK_IMPORTED_MODULE_4__["CurrentTabProvider"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 100
+    },
+    __self: undefined
+  }, __jsx(InnerLayout, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 101
+    },
+    __self: undefined
+  }));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Layout);
+
+/***/ }),
+
+/***/ "./utils/hooks/useComponentDidMount.ts":
+/*!*********************************************!*\
+  !*** ./utils/hooks/useComponentDidMount.ts ***!
+  \*********************************************/
+/*! exports provided: useComponentDidMount */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useComponentDidMount", function() { return useComponentDidMount; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+const useComponentDidMount = (handler, postHandler) => {
+  const {
+    0: firstLoaded,
+    1: setFirstLoaded
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+  const {
+    0: IsDone,
+    1: setIsDone
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    if (!firstLoaded) {
+      setFirstLoaded(true);
+    }
+  }, []);
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    if (firstLoaded) {
+      handler();
+      setIsDone(true);
+      return postHandler ? () => postHandler() : () => null;
+    }
+
+    return;
+  }, [firstLoaded]);
+  return {
+    firstLoaded,
+    IsDone,
+    setIsDone
+  };
+};
 
 /***/ }),
 
@@ -1340,9 +1446,12 @@ function ownKeys(object, enumerableOnly) { var keys = _babel_runtime_corejs2_cor
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(target, key, source[key]); }); } else if (_babel_runtime_corejs2_core_js_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_2___default.a) { _babel_runtime_corejs2_core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_1___default()(target, _babel_runtime_corejs2_core_js_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_2___default()(source)); } else { ownKeys(Object(source)).forEach(function (key) { _babel_runtime_corejs2_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default()(target, key, _babel_runtime_corejs2_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3___default()(source, key)); }); } } return target; }
 
 
-const store = {
+let initStore = {
   currentTab: {
     currentTab: 0
+  },
+  scale: {
+    scale: 1
   },
   test: {
     count: 0
@@ -1367,6 +1476,16 @@ const test = (state, action) => {
   } else {
     return state;
   }
+};
+
+const scale = (state, action) => {
+  if (action.type === 'setScale') {
+    return _objectSpread({}, state, {
+      scale: action.value
+    });
+  } else {
+    return state;
+  }
 }; // 自定义合并reducer函数
 // 根据reducer定义的名称，拿到state中的对应名称下的state
 // state 也是一个复合 state
@@ -1382,17 +1501,24 @@ const combineReducers = reducers => (state, action) => _babel_runtime_corejs2_co
 
 const reducers = combineReducers({
   currentTab,
-  test
+  test,
+  scale
 });
 function createCurrentTab() {
   const CurrentTabContext = react__WEBPACK_IMPORTED_MODULE_8___default.a.createContext(null);
 
   function CurrentTabProvider(props) {
-    const [state, dispatch] = react__WEBPACK_IMPORTED_MODULE_8___default.a.useReducer(reducers, store);
+    const [state, dispatch] = react__WEBPACK_IMPORTED_MODULE_8___default.a.useReducer(reducers, initStore);
     const actions = {
       setCurrentTab: e => {
         dispatch({
           type: 'setCurrentTab',
+          value: e
+        });
+      },
+      setScale: e => {
+        dispatch({
+          type: 'setScale',
           value: e
         });
       }
@@ -1404,7 +1530,7 @@ function createCurrentTab() {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 56
+        lineNumber: 69
       },
       __self: this
     }, props.children);
@@ -1430,6 +1556,51 @@ const {
   useCurrentTab
 } = createCurrentTab();
 
+
+/***/ }),
+
+/***/ "./utils/hooks/useResizeCallback.ts":
+/*!******************************************!*\
+  !*** ./utils/hooks/useResizeCallback.ts ***!
+  \******************************************/
+/*! exports provided: useResizeCallback */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useResizeCallback", function() { return useResizeCallback; });
+/* harmony import */ var _useComponentDidMount__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./useComponentDidMount */ "./utils/hooks/useComponentDidMount.ts");
+/* harmony import */ var lodash_throttle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lodash/throttle */ "lodash/throttle");
+/* harmony import */ var lodash_throttle__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(lodash_throttle__WEBPACK_IMPORTED_MODULE_1__);
+
+
+let callback_queue = [];
+const useResizeCallback = fallBackHandler => {
+  Object(_useComponentDidMount__WEBPACK_IMPORTED_MODULE_0__["useComponentDidMount"])(() => {
+    window.onresize = lodash_throttle__WEBPACK_IMPORTED_MODULE_1___default()(e => {
+      const width = e.target.innerWidth;
+
+      if (width < 768) {
+        fallBackHandler && fallBackHandler();
+        return;
+      }
+
+      callback_queue.forEach(callback => {
+        callback();
+      });
+    }, 800, {
+      trailing: true
+    });
+  });
+
+  function addCallback(callback) {
+    callback_queue.push(callback);
+  }
+
+  return {
+    addCallback
+  };
+};
 
 /***/ }),
 
@@ -1519,6 +1690,17 @@ module.exports = require("core-js/library/fn/object/get-own-property-symbols");
 /***/ (function(module, exports) {
 
 module.exports = require("core-js/library/fn/object/keys");
+
+/***/ }),
+
+/***/ "lodash/throttle":
+/*!**********************************!*\
+  !*** external "lodash/throttle" ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("lodash/throttle");
 
 /***/ }),
 

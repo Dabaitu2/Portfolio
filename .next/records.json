@@ -16,23 +16,6 @@
       }
     }
   ],
-  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/less-loader/dist/cjs.js??ref--6-2!components/LayoutHeader/index.module.less": [
-    {
-      "modules": {
-        "byIdentifier": {},
-        "usedIds": {}
-      },
-      "chunks": {
-        "byName": {
-          "mini-css-extract-plugin": 0
-        },
-        "bySource": {},
-        "usedIds": [
-          0
-        ]
-      }
-    }
-  ],
   "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/less-loader/dist/cjs.js??ref--6-2!components/Projects/index.module.less": [
     {
       "modules": {
@@ -50,7 +33,7 @@
       }
     }
   ],
-  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/less-loader/dist/cjs.js??ref--6-2!components/Profile/Banner/index.module.less": [
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/less-loader/dist/cjs.js??ref--6-2!components/LayoutHeader/index.module.less": [
     {
       "modules": {
         "byIdentifier": {},
@@ -68,6 +51,23 @@
     }
   ],
   "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/less-loader/dist/cjs.js??ref--6-2!components/Profile/Contact/index.module.less": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/less-loader/dist/cjs.js??ref--6-2!components/Profile/Banner/index.module.less": [
     {
       "modules": {
         "byIdentifier": {},
@@ -200,18 +200,20 @@
       "static/runtime/webpack.js": 0,
       "commons": 1,
       "framework": 2,
-      "80ce25d7538fb3ad0a862cfd52a354090e83e1ed": 3,
-      "static/cDuP3GGgzulSNK7kh28yQ/pages/_app.js": 4,
-      "static/cDuP3GGgzulSNK7kh28yQ/pages/_error.js": 5,
-      "static/cDuP3GGgzulSNK7kh28yQ/pages/index.js": 6,
-      "static/runtime/main.js": 7,
-      "static/runtime/polyfills.js": 8,
-      "styles": 9
+      "49e0592377475dbfb1292554edd19529dfe6f77b": 3,
+      "static/oAK6Ifz-6H7rEzW3gxiQi/pages/Project/dualLayerSolution.js": 4,
+      "static/oAK6Ifz-6H7rEzW3gxiQi/pages/_app.js": 5,
+      "static/oAK6Ifz-6H7rEzW3gxiQi/pages/_error.js": 6,
+      "static/oAK6Ifz-6H7rEzW3gxiQi/pages/index.js": 7,
+      "static/runtime/main.js": 8,
+      "static/runtime/polyfills.js": 9,
+      "styles": 10
     },
     "bySource": {},
     "usedIds": [
       0,
       1,
+      10,
       2,
       3,
       4,

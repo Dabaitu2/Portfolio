@@ -1,26 +1,29 @@
 {
   "modules": {
     "byIdentifier": {
-      "multi private-next-pages/index.tsx": 0,
-      "multi next/dist/pages/_app": 1,
-      "multi next/dist/pages/_error": 2,
-      "multi next/dist/pages/_document": 3
+      "multi private-next-pages/Project/dualLayerSolution.tsx": 0,
+      "multi private-next-pages/index.tsx": 1,
+      "multi next/dist/pages/_app": 2,
+      "multi next/dist/pages/_error": 3,
+      "multi next/dist/pages/_document": 4
     },
     "usedIds": {
       "0": 0,
       "1": 1,
       "2": 2,
-      "3": 3
+      "3": 3,
+      "4": 4
     }
   },
   "chunks": {
     "byName": {
       "init-server.js": 0,
       "on-error-server.js": 1,
-      "static/cDuP3GGgzulSNK7kh28yQ/pages/_app.js": 2,
-      "static/cDuP3GGgzulSNK7kh28yQ/pages/_document.js": 3,
-      "static/cDuP3GGgzulSNK7kh28yQ/pages/_error.js": 4,
-      "static/cDuP3GGgzulSNK7kh28yQ/pages/index.js": 5
+      "static/oAK6Ifz-6H7rEzW3gxiQi/pages/Project/dualLayerSolution.js": 2,
+      "static/oAK6Ifz-6H7rEzW3gxiQi/pages/_app.js": 3,
+      "static/oAK6Ifz-6H7rEzW3gxiQi/pages/_document.js": 4,
+      "static/oAK6Ifz-6H7rEzW3gxiQi/pages/_error.js": 5,
+      "static/oAK6Ifz-6H7rEzW3gxiQi/pages/index.js": 6
     },
     "bySource": {},
     "usedIds": [
@@ -29,7 +32,8 @@
       2,
       3,
       4,
-      5
+      5,
+      6
     ]
   }
 }

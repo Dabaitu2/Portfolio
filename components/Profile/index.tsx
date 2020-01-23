@@ -110,7 +110,7 @@ const myInfo: IMyInfo[] = [
       }
     ],
     // 由于上下margin 重叠的规则，最后的Gap不会影响到存在大于 42 marginTop的下一个元素的margin展示，比如下一个是80，那么结果还是 42 & 80 = 80 而不会变成 122
-    bottomGap: '42px'
+    bottomGap: '42rem'
   },
   {
     title: 'MANAGEMENT EXPERIENCE',
@@ -149,7 +149,7 @@ const myInfo: IMyInfo[] = [
 const Profile: React.FC<{}> = () => {
   return (
     <div style={{
-      width: '1600px'
+      width: '1600rem'
     }}>
       <Banner />
       <Contact />
