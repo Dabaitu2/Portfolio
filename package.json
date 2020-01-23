@@ -1,0 +1,29 @@
+{
+  "name": "Portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@zeit/next-less": "^1.0.1",
+    "less": "^3.10.3",
+    "lodash": "^4.17.15",
+    "next": "^9.2.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "styled-components": "^5.0.0",
+    "styled-jsx": "^3.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^13.1.8",
+    "@types/react": "^16.9.17",
+    "next-fonts": "^0.19.0",
+    "prettier": "^1.19.1",
+    "typescript": "^3.7.5",
+    "url-loader": "^3.0.0"
+  }
+}

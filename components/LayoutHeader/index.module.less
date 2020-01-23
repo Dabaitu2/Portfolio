@@ -1,0 +1,33 @@
+@import '../../pages/common';
+.layout-menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.layout-menu-item {
+  line-height: 32px;
+  font-family: 'Sofia Pro Bold', 'Sofia Pro', Serif;
+  font-style: italic;
+  color: @main-color;
+  cursor: pointer;
+}
+.layout-slider {
+  margin-top: 6px;
+  height: 16px;
+}
+
+.layout-slider-line {
+  width: 1600px;
+  height: 1px;
+  background-color: @split-line-color;
+}
+
+.layout-slider-dot {
+  transition: 0.6s ease-in-out;
+  float: left;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  background-color: @main-color;
+  border-radius: 50%;
+}

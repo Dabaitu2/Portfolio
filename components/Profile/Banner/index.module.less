@@ -1,0 +1,60 @@
+@import '../../../pages/common';
+.banner-container {
+  margin-top: 117px;
+  margin-bottom: 100px;
+}
+.title {
+  display: flex;
+}
+.picture {
+  width: 741px;
+  height: 373px;
+}
+.name {
+  display: inline-block;
+  margin-left: 60px;
+  .welcome {
+    display: table-cell;
+    vertical-align: bottom;
+    height: 52px;
+    line-height: 35px;
+    font-size: 26.4px;
+    font-family: "Sofia Pro Light";
+    color: #000000;
+  }
+  .actual-name {
+    margin-top: 71px;
+    transform: translateX(-7.5px);
+    & {
+      span {
+        font-size: 108px;
+        line-height: 108px;
+        height: 108px;
+        color: @main-color;
+      }
+
+      .chinese-name {
+        font-family: "Sofia Pro Black";
+      }
+
+      .english-name {
+        font-family: "Sofia Pro Ultra Light";
+      }
+    }
+  }
+
+  .who-am-i {
+    font-size: 26.4px;
+    line-height: 35px;
+    font-family: "Sofia Pro Light";
+  }
+}
+
+.metaphor {
+  margin-top: 27px;
+  font-family: 'Sofia Pro Bold', 'Sofia Pro', Serif;
+  font-style: italic;
+  color: @main-color;
+  font-size: 23px;
+  line-height: 23px;
+}
