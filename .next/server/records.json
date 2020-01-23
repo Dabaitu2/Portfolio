@@ -17,18 +17,10 @@
     "byName": {
       "init-server.js": 0,
       "on-error-server.js": 1,
-      "static/bylTvIwnbDuGvCa3yLflj/pages/_app.js": 2,
-      "static/bylTvIwnbDuGvCa3yLflj/pages/_document.js": 3,
-      "static/bylTvIwnbDuGvCa3yLflj/pages/_error.js": 4,
-      "static/bylTvIwnbDuGvCa3yLflj/pages/index.js": 5,
-      "static/2NhMDoLxiWWV_FfIV5Oza/pages/_app.js": 6,
-      "static/2NhMDoLxiWWV_FfIV5Oza/pages/_document.js": 7,
-      "static/2NhMDoLxiWWV_FfIV5Oza/pages/_error.js": 8,
-      "static/2NhMDoLxiWWV_FfIV5Oza/pages/index.js": 9,
-      "static/ScBHzen5GA_ZR-uU2s2aH/pages/_app.js": 2,
-      "static/ScBHzen5GA_ZR-uU2s2aH/pages/_document.js": 3,
-      "static/ScBHzen5GA_ZR-uU2s2aH/pages/_error.js": 4,
-      "static/ScBHzen5GA_ZR-uU2s2aH/pages/index.js": 5
+      "static/cDuP3GGgzulSNK7kh28yQ/pages/_app.js": 2,
+      "static/cDuP3GGgzulSNK7kh28yQ/pages/_document.js": 3,
+      "static/cDuP3GGgzulSNK7kh28yQ/pages/_error.js": 4,
+      "static/cDuP3GGgzulSNK7kh28yQ/pages/index.js": 5
     },
     "bySource": {},
     "usedIds": [

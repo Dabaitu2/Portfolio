@@ -135,7 +135,7 @@
       }
     }
   ],
-  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/less-loader/dist/cjs.js??ref--6-2!components/common/Description/index.module.less": [
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/less-loader/dist/cjs.js??ref--6-2!components/common/SubTitle/index.module.less": [
     {
       "modules": {
         "byIdentifier": {},
@@ -152,7 +152,7 @@
       }
     }
   ],
-  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/less-loader/dist/cjs.js??ref--6-2!components/common/SubTitle/index.module.less": [
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/less-loader/dist/cjs.js??ref--6-2!components/common/Description/index.module.less": [
     {
       "modules": {
         "byIdentifier": {},
@@ -200,21 +200,13 @@
       "static/runtime/webpack.js": 0,
       "commons": 1,
       "framework": 2,
-      "2fce04c01dd57296844157294db53a8fdc6834d6": 3,
-      "static/bylTvIwnbDuGvCa3yLflj/pages/_app.js": 4,
-      "static/bylTvIwnbDuGvCa3yLflj/pages/_error.js": 5,
-      "static/bylTvIwnbDuGvCa3yLflj/pages/index.js": 6,
+      "80ce25d7538fb3ad0a862cfd52a354090e83e1ed": 3,
+      "static/cDuP3GGgzulSNK7kh28yQ/pages/_app.js": 4,
+      "static/cDuP3GGgzulSNK7kh28yQ/pages/_error.js": 5,
+      "static/cDuP3GGgzulSNK7kh28yQ/pages/index.js": 6,
       "static/runtime/main.js": 7,
       "static/runtime/polyfills.js": 8,
-      "styles": 9,
-      "6ff419843c7dfc9e303ef12ecf56e722c30025ed": 10,
-      "static/2NhMDoLxiWWV_FfIV5Oza/pages/_app.js": 11,
-      "static/2NhMDoLxiWWV_FfIV5Oza/pages/_error.js": 12,
-      "static/2NhMDoLxiWWV_FfIV5Oza/pages/index.js": 13,
-      "932b799961c65877dee26d98b99ef8415d2e54cb": 3,
-      "static/ScBHzen5GA_ZR-uU2s2aH/pages/_app.js": 4,
-      "static/ScBHzen5GA_ZR-uU2s2aH/pages/_error.js": 5,
-      "static/ScBHzen5GA_ZR-uU2s2aH/pages/index.js": 6
+      "styles": 9
     },
     "bySource": {},
     "usedIds": [

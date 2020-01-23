@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1222,42 +1222,61 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0__["createElement"];
 
 
 
+
 const Layout = () => {
+  const containerRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    const scale = Math.min(document.body.clientWidth / 1920, 1);
+    let metaEl = document.querySelector('meta[name="viewport"]');
+
+    if (!metaEl) {
+      metaEl = document.createElement('meta');
+      metaEl.setAttribute('name', 'viewport');
+      metaEl.setAttribute('content', 'width=device-width, initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
+      document.documentElement.firstElementChild.appendChild(metaEl);
+    } else {
+      metaEl.setAttribute('content', 'width=device-width, initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
+    }
+
+    window.scrollTo({
+      top: 0
+    });
+  }, [containerRef.current]);
   return __jsx(_utils_hooks_useCurrentTab__WEBPACK_IMPORTED_MODULE_4__["CurrentTabProvider"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 47
     },
     __self: undefined
   }, __jsx("div", {
     className: _index_less__WEBPACK_IMPORTED_MODULE_1___default.a.layout,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 48
     },
     __self: undefined
   }, __jsx(_components_LayoutHeader__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 49
     },
     __self: undefined
   }), __jsx(_components_ContentSwitcher__WEBPACK_IMPORTED_MODULE_6__["ContentSwitcher"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 50
     },
     __self: undefined
   }, __jsx(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], null, __jsx(_components_Profile__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 52
     },
     __self: undefined
   }), __jsx(_components_Projects__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 53
     },
     __self: undefined
   }))), __jsx(_components_LayoutHeader__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -1266,7 +1285,7 @@ const Layout = () => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 56
     },
     __self: undefined
   })));
@@ -1414,7 +1433,7 @@ const {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!*******************************!*\
   !*** multi ./pages/index.tsx ***!
   \*******************************/

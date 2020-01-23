@@ -3114,42 +3114,61 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0__["createElement"];
 
 
 
+
 var Layout = function Layout() {
+  var containerRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    var scale = Math.min(document.body.clientWidth / 1920, 1);
+    var metaEl = document.querySelector('meta[name="viewport"]');
+
+    if (!metaEl) {
+      metaEl = document.createElement('meta');
+      metaEl.setAttribute('name', 'viewport');
+      metaEl.setAttribute('content', 'width=device-width, initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
+      document.documentElement.firstElementChild.appendChild(metaEl);
+    } else {
+      metaEl.setAttribute('content', 'width=device-width, initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
+    }
+
+    window.scrollTo({
+      top: 0
+    });
+  }, [containerRef.current]);
   return __jsx(_utils_hooks_useCurrentTab__WEBPACK_IMPORTED_MODULE_4__["CurrentTabProvider"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 47
     },
     __self: this
   }, __jsx("div", {
     className: _index_less__WEBPACK_IMPORTED_MODULE_1___default.a.layout,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 48
     },
     __self: this
   }, __jsx(_components_LayoutHeader__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 49
     },
     __self: this
   }), __jsx(_components_ContentSwitcher__WEBPACK_IMPORTED_MODULE_6__["ContentSwitcher"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 50
     },
     __self: this
   }, __jsx(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], null, __jsx(_components_Profile__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 52
     },
     __self: this
   }), __jsx(_components_Projects__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 53
     },
     __self: this
   }))), __jsx(_components_LayoutHeader__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -3158,7 +3177,7 @@ var Layout = function Layout() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 56
     },
     __self: this
   })));
@@ -3319,7 +3338,7 @@ var _createCurrentTab = createCurrentTab(),
 
 /***/ }),
 
-/***/ 1:
+/***/ 0:
 /*!**********************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Ftomokokawase%2FDesktop%2FPortfolio%2Fpages%2Findex.tsx ***!
   \**********************************************************************************************************************************/
@@ -3342,5 +3361,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js","styles"]]]);
+},[[0,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map
