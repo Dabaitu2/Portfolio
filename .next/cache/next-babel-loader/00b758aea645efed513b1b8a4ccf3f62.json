@@ -1,0 +1,1 @@
+{"ast":null,"code":"// @ts-ignore\nimport { analyze } from '../rgbaster';\n\nonmessage = function onmessage(e) {\n  if (true) {\n    var colors = analyze(e.data);\n\n    if (colors[0]) {\n      // @ts-ignore\n      postMessage(colors[0].color);\n    }\n  }\n};","map":null,"metadata":{},"sourceType":"module"}

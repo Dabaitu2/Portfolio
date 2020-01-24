@@ -1,0 +1,1 @@
+self.__BUILD_MANIFEST = (function(a,b){return {"/":[a,b],"/index":[a,b],"/projects/dual-layer-solution":["static\u002Fchunks\u002F801a6084.da3af378954b62d8ad29.js",a,b]}}("static\u002Fcss\u002Fstyles.bb56886d.chunk.css","static\u002Fchunks\u002Fstyles.f54a2429c2de45f20e03.js"));self.__BUILD_MANIFEST_CB && self.__BUILD_MANIFEST_CB()

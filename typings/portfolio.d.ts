@@ -70,3 +70,11 @@ declare module '*.less' {
   const classes: { [key: string]: string };
   export default classes;
 }
+
+declare module 'worker-loader?name=static/[hash].worker.js!*' {
+  class WebpackWorker extends Worker {
+    constructor();
+  }
+
+  export default WebpackWorker;
+}
