@@ -50,13 +50,21 @@ const combineReducers = reducers => (state, action) =>
 
 const reducers = combineReducers({ currentTab, test, scale });
 
-export function createCurrentTab() {
+export function createCurrentTab(_initStore?: Partial<typeof initStore>) {
   const CurrentTabContext = React.createContext<{
     state: { [key: string]: any };
     actions: any;
   }>(null);
   function CurrentTabProvider(props: { children: any }) {
-    const [state, dispatch] = React.useReducer(reducers, initStore);
+    const [state, dispatch] = React.useReducer(
+      reducers,
+      _initStore
+        ? {
+            ...initStore,
+            ..._initStore
+          }
+        : initStore
+    );
     const actions = {
       setCurrentTab: e => {
         dispatch({ type: 'setCurrentTab', value: e });

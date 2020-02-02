@@ -4,7 +4,7 @@ export interface ISources {
   src: string;
   type: string;
 }
-interface IProps {
+export interface LazyLoadImgProps {
   sources?: ISources[];
   preview_sources?: ISources[];
   src: string;
@@ -12,6 +12,8 @@ interface IProps {
   alt?: string;
   className?: string;
 }
+
+type IProps = LazyLoadImgProps;
 
 const LazyLoadImg: FC<IProps> = (props: IProps) => {
   const { className, src, sources, alt, preview_src, preview_sources } = props;

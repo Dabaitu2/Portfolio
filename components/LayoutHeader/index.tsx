@@ -12,6 +12,7 @@ interface MenuItem {
 
 interface IProps {
   bodyStyle?: CSSProperties;
+  menuItems?: MenuItem[];
 }
 
 const MenuItems: MenuItem[] = [
@@ -40,7 +41,7 @@ const LayoutHeader: React.FC<IProps> = props => {
   // 设置小圆点的位置
   const [dotX, setDotX] = useState(0);
   const bodyWidth = useRef(null);
-  const _MenuItems = MenuItems.map(item => ({
+  const _MenuItems = [MenuItems[0]].concat(props.menuItems || []).concat(MenuItems[1]).map(item => ({
     ...item,
     ref: React.useRef()
   }));

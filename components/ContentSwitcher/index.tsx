@@ -20,13 +20,26 @@ export const ContentSwitcher: FC<IProps> = (props: IProps) => {
     >
       <div
         style={{
-          width: '3200rem',
+          width: props.children.length * 1600 + 'rem',
           display: 'flex',
           transform: `translateX(-${currentTab * 1600}rem)`,
           transition: '0.6s ease-in-out'
         }}
       >
-        {props.children}
+        {props.children
+          ? props.children.map((c, i) => (
+              <div
+                style={{
+                  width: '1600rem',
+                  height: i === currentTab ? '100%' : '0',
+                  overflow: 'hidden',
+                  transition: '0.6s ease-in-out'
+                }}
+              >
+                {c}
+              </div>
+            ))
+          : null}
       </div>
     </div>
   );

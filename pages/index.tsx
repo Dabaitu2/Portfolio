@@ -94,10 +94,8 @@ const InnerLayout: React.FC<{}> = () => {
     <div className={styles.layout}>
       <LayoutHeader />
       <ContentSwitcher>
-        <>
           <Profile />
           <Projects />
-        </>
       </ContentSwitcher>
       <LayoutHeader
         bodyStyle={{

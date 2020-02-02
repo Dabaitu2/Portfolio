@@ -19,6 +19,7 @@ const AutoBackGroundColorSliderPage: FC<IProps> = (props: IProps) => {
     img.onload = () => {
       getData(preview_src)
         .then(value => {
+          // worker 不会阻塞渲染
           const worker = new findMainThemeWorker();
           worker.postMessage(value);
           worker.onmessage = e => {

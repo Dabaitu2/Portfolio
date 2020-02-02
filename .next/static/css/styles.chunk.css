@@ -173,7 +173,7 @@ body {
   line-height: 32rem;
   font-family: 'Sofia Pro Bold', 'Sofia Pro', Serif;
   font-style: italic;
-  color: #212772;
+  color: #000000;
   cursor: pointer;
 }
 .layout-slider___15Qhc {
@@ -190,12 +190,58 @@ body {
   display: inline-block;
   height: 16rem;
   width: 16rem;
-  background-color: #212772;
+  background-color: #000;
   border-radius: 50%;
   transition: 0.6s ease-in-out;
 }
 .animated___3Ynd9 {
   transition: 0.6s ease-in-out;
+}
+
+.project-detail-item___3nVhL {
+  padding-top: 125rem;
+  padding-bottom: 158rem;
+}
+.project-detail-item___3nVhL .project-detail-images___1_kNN .project-detail-image___19LrW {
+  width: 1600rem;
+  height: 640rem;
+}
+.project-detail-item___3nVhL .project-detail-title___1xjA0 {
+  font-family: 'Sofia Pro Semi bold';
+  font-size: 58rem;
+  letter-spacing: 0;
+  border-bottom: 2rem solid;
+  line-height: 1;
+  display: inline-block;
+  margin-top: 70rem;
+}
+.project-detail-item___3nVhL .project-detail-subtitle___31b4C {
+  margin-top: 4rem;
+  font-family: 'Sofia Pro Regular';
+  font-size: 24rem;
+  letter-spacing: 0;
+  display: flex;
+  flex-direction: column;
+}
+.project-detail-item___3nVhL .project-detail-subtitle___31b4C span {
+  line-height: 24rem;
+  padding-top: 9rem;
+  display: table-cell;
+  vertical-align: bottom;
+}
+.project-detail-item___3nVhL .project-detail-details___1UI-I {
+  margin-top: 74rem;
+  color: white;
+  font-family: "Sofia Pro Regular";
+  font-size: 20rem;
+  letter-spacing: 0;
+  text-align: justify;
+  padding: 14rem;
+  line-height: 33.4rem;
+}
+.project-detail-item___3nVhL .project-detail-details___1UI-I .project-detail-tags___2Cbgb {
+  padding-bottom: 32rem;
+  padding-top: 9rem;
 }
 
 @font-face {
@@ -583,7 +629,7 @@ body {
   height: 30vh;
   width: 1600rem;
   text-align: center;
-  padding-top: 180rem;
+  padding-top: 187rem;
   font-family: "Sofia Pro Black";
   font-size: 30rem;
   color: #212772;
@@ -660,30 +706,60 @@ body {
   src: url("/_next/static/chunks/fonts/Sofia Pro Extra Light Italic-36ddf111eefa96731c7064c7f20ee579.otf");
   font-style: italic;
 }
-.main-color___2AbCi {
+.main-color___2RATp {
   color: #212772;
 }
-.split-line-color___2wupk {
+.split-line-color___1aBwu {
   color: #000000;
 }
-body {
-  margin: 0;
-  user-select: none;
+.project-images___3jO0d {
+  display: flex;
+  height: 245rem;
 }
-.layout___l-LZX {
-  width: 1600rem;
-  margin: 0 auto;
-  margin-top: 52.5rem;
-  margin-bottom: 180rem;
+.project-images___3jO0d div {
+  margin-right: 5rem;
 }
-.solution-layout___FSfQa {
-  width: 100vw;
-  font-size: 0;
-  background-color: #ffffff;
-  text-align: center;
+.project-images___3jO0d div:nth-last-of-type(1) {
+  margin-right: 0;
 }
-.solution-layout___FSfQa img {
-  height: 100vh;
+.project-images___3jO0d div .project-image___38v8v {
+  width: 490rem;
+  height: 245rem;
+}
+.project-index-item___rOerk {
+  display: flex;
+  color: black;
+  justify-content: space-between;
+  text-align: left;
+  padding: 40rem 0;
+  margin-bottom: 387rem;
+}
+.project-index-item___rOerk:nth-last-of-type(1) {
+  margin-bottom: 223rem;
+}
+.project-index-item___rOerk:hover {
+  background-color: #e2e2e2;
+  transition: 0.6s ease-in-out;
+}
+.project-index-subtitle___YcFUz {
+  font-family: "Sofia Pro Regular";
+  font-size: 24px;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: 33.6px;
+}
+.project-index-subtitle___YcFUz span {
+  display: block;
+}
+.project-index-subtitle___YcFUz:hover {
+  text-decoration: underline;
+}
+.project-index-title___1t5-0 {
+  font-family: "Sofia Pro Semi bold";
+  font-size: 58rem;
+  display: inline-block;
+  border-bottom: 2px solid #000000;
+  line-height: 1;
 }
 
 

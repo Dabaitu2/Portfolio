@@ -30,7 +30,7 @@ module.exports = {"main-color":"main-color___1ATyE","split-line-color":"split-li
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1579892387344");
+            injectCss(link, link.href.split("?")[0] + "?unix=1580671227012");
           });
       }
     }
@@ -68,7 +68,7 @@ module.exports = {"main-color":"main-color___1vwFq","split-line-color":"split-li
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1579892387349");
+            injectCss(link, link.href.split("?")[0] + "?unix=1580671227016");
           });
       }
     }
@@ -106,7 +106,83 @@ module.exports = {"main-color":"main-color___HghB8","split-line-color":"split-li
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1579892387352");
+            injectCss(link, link.href.split("?")[0] + "?unix=1580671227020");
+          });
+      }
+    }
+  
+
+/***/ }),
+
+/***/ "./components/Projects/ProjectDetail/index.module.less":
+/*!*************************************************************!*\
+  !*** ./components/Projects/ProjectDetail/index.module.less ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+module.exports = {"project-detail-item":"project-detail-item___3nVhL","project-detail-images":"project-detail-images___1_kNN","project-detail-image":"project-detail-image___19LrW","project-detail-title":"project-detail-title___1xjA0","project-detail-subtitle":"project-detail-subtitle___31b4C","project-detail-details":"project-detail-details___1UI-I","project-detail-tags":"project-detail-tags___2Cbgb"};;
+    if (true) {
+      var injectCss = function injectCss(prev, href) {
+        var link = prev.cloneNode();
+        link.href = href;
+        link.onload = function() {
+          prev.parentNode.removeChild(prev);
+        };
+        prev.stale = true;
+        prev.parentNode.insertBefore(link, prev);
+      };
+      module.hot.dispose(function() {
+        window.__webpack_reload_css__ = true;
+      });
+      if (window.__webpack_reload_css__) {
+        module.hot.__webpack_reload_css__ = false;
+        console.log("[HMR] Reloading stylesheets...");
+        var prefix = document.location.protocol + '//' + document.location.host;
+        document
+          .querySelectorAll("link[href][rel=stylesheet]")
+          .forEach(function(link) {
+            if (!link.href.match(prefix) || link.stale) return;
+            injectCss(link, link.href.split("?")[0] + "?unix=1580670885457");
+          });
+      }
+    }
+  
+
+/***/ }),
+
+/***/ "./components/Projects/ProjectIndexItem/index.module.less":
+/*!****************************************************************!*\
+  !*** ./components/Projects/ProjectIndexItem/index.module.less ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+module.exports = {"main-color":"main-color___2RATp","split-line-color":"split-line-color___1aBwu","project-images":"project-images___3jO0d","project-image":"project-image___38v8v","project-index-item":"project-index-item___rOerk","project-index-subtitle":"project-index-subtitle___YcFUz","project-index-title":"project-index-title___1t5-0"};;
+    if (true) {
+      var injectCss = function injectCss(prev, href) {
+        var link = prev.cloneNode();
+        link.href = href;
+        link.onload = function() {
+          prev.parentNode.removeChild(prev);
+        };
+        prev.stale = true;
+        prev.parentNode.insertBefore(link, prev);
+      };
+      module.hot.dispose(function() {
+        window.__webpack_reload_css__ = true;
+      });
+      if (window.__webpack_reload_css__) {
+        module.hot.__webpack_reload_css__ = false;
+        console.log("[HMR] Reloading stylesheets...");
+        var prefix = document.location.protocol + '//' + document.location.host;
+        document
+          .querySelectorAll("link[href][rel=stylesheet]")
+          .forEach(function(link) {
+            if (!link.href.match(prefix) || link.stale) return;
+            injectCss(link, link.href.split("?")[0] + "?unix=1580671227027");
           });
       }
     }
@@ -144,7 +220,7 @@ module.exports = {"main":"main___3sGd6"};;
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1579891318609");
+            injectCss(link, link.href.split("?")[0] + "?unix=1580667601311");
           });
       }
     }
@@ -182,7 +258,7 @@ module.exports = {"info-container":"info-container___3GTzi","info":"info___1C7pF
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1579891318973");
+            injectCss(link, link.href.split("?")[0] + "?unix=1580667602152");
           });
       }
     }
@@ -220,7 +296,7 @@ module.exports = {"info-container":"info-container___3jIr7","info":"info___2-8k-
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1579891319078");
+            injectCss(link, link.href.split("?")[0] + "?unix=1580667602249");
           });
       }
     }
@@ -258,7 +334,7 @@ module.exports = {"main-color":"main-color___-a4BP","split-line-color":"split-li
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1579892387354");
+            injectCss(link, link.href.split("?")[0] + "?unix=1580671227024");
           });
       }
     }
@@ -296,7 +372,7 @@ module.exports = {"info-container":"info-container___DmMR0","info":"info___31OhC
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1579891318980");
+            injectCss(link, link.href.split("?")[0] + "?unix=1580667602172");
           });
       }
     }
@@ -334,7 +410,7 @@ module.exports = {"info-container":"info-container___gv01a","info":"info___1C4Oe
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1579891319065");
+            injectCss(link, link.href.split("?")[0] + "?unix=1580667602221");
           });
       }
     }
@@ -372,45 +448,7 @@ module.exports = {"main-color":"main-color___EG-zS","split-line-color":"split-li
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1579892387335");
-          });
-      }
-    }
-  
-
-/***/ }),
-
-/***/ "./pages/projects/dual-layer-solution.less":
-/*!*************************************************!*\
-  !*** ./pages/projects/dual-layer-solution.less ***!
-  \*************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
-module.exports = {"main-color":"main-color___2AbCi","split-line-color":"split-line-color___2wupk","layout":"layout___l-LZX","solution-layout":"solution-layout___FSfQa"};;
-    if (true) {
-      var injectCss = function injectCss(prev, href) {
-        var link = prev.cloneNode();
-        link.href = href;
-        link.onload = function() {
-          prev.parentNode.removeChild(prev);
-        };
-        prev.stale = true;
-        prev.parentNode.insertBefore(link, prev);
-      };
-      module.hot.dispose(function() {
-        window.__webpack_reload_css__ = true;
-      });
-      if (window.__webpack_reload_css__) {
-        module.hot.__webpack_reload_css__ = false;
-        console.log("[HMR] Reloading stylesheets...");
-        var prefix = document.location.protocol + '//' + document.location.host;
-        document
-          .querySelectorAll("link[href][rel=stylesheet]")
-          .forEach(function(link) {
-            if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1579892387103");
+            injectCss(link, link.href.split("?")[0] + "?unix=1580671227001");
           });
       }
     }

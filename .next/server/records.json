@@ -18,39 +18,67 @@
   ],
   "modules": {
     "byIdentifier": {
-      "multi private-next-pages/index.tsx": 0,
-      "multi private-next-pages/projects/dual-layer-solution.tsx": 1,
-      "multi next/dist/pages/_app": 2,
-      "multi next/dist/pages/_error": 3,
-      "multi next/dist/pages/_document": 4
+      "multi private-next-pages/_app.tsx": 0,
+      "multi private-next-pages/index.tsx": 1,
+      "multi private-next-pages/projects/bamboo.tsx": 2,
+      "multi private-next-pages/projects/dual-layer-solution.tsx": 3,
+      "multi private-next-pages/projects/dual-layer.tsx": 4,
+      "multi private-next-pages/projects/emo.tsx": 5,
+      "multi private-next-pages/projects/endless-form.tsx": 6,
+      "multi private-next-pages/projects/flyro.tsx": 7,
+      "multi private-next-pages/projects/string-board.tsx": 8,
+      "multi private-next-pages/projects/xixi4rhino.tsx": 9,
+      "multi next/dist/pages/_error": 10,
+      "multi next/dist/pages/_document": 11
     },
     "usedIds": {
       "0": 0,
       "1": 1,
       "2": 2,
       "3": 3,
-      "4": 4
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11
     }
   },
   "chunks": {
     "byName": {
       "init-server.js": 0,
       "on-error-server.js": 1,
-      "static/aLtUrs6pS-wQZ8FkGpiW6/pages/_app.js": 2,
-      "static/aLtUrs6pS-wQZ8FkGpiW6/pages/_document.js": 3,
-      "static/aLtUrs6pS-wQZ8FkGpiW6/pages/_error.js": 4,
-      "static/aLtUrs6pS-wQZ8FkGpiW6/pages/index.js": 5,
-      "static/aLtUrs6pS-wQZ8FkGpiW6/pages/projects/dual-layer-solution.js": 6
+      "static/hGINQNlJQiPQhent651n5/pages/_app.js": 2,
+      "static/hGINQNlJQiPQhent651n5/pages/_document.js": 3,
+      "static/hGINQNlJQiPQhent651n5/pages/_error.js": 4,
+      "static/hGINQNlJQiPQhent651n5/pages/index.js": 5,
+      "static/hGINQNlJQiPQhent651n5/pages/projects/bamboo.js": 6,
+      "static/hGINQNlJQiPQhent651n5/pages/projects/dual-layer-solution.js": 7,
+      "static/hGINQNlJQiPQhent651n5/pages/projects/dual-layer.js": 8,
+      "static/hGINQNlJQiPQhent651n5/pages/projects/emo.js": 9,
+      "static/hGINQNlJQiPQhent651n5/pages/projects/endless-form.js": 10,
+      "static/hGINQNlJQiPQhent651n5/pages/projects/flyro.js": 11,
+      "static/hGINQNlJQiPQhent651n5/pages/projects/string-board.js": 12,
+      "static/hGINQNlJQiPQhent651n5/pages/projects/xixi4rhino.js": 13
     },
     "bySource": {},
     "usedIds": [
       0,
       1,
+      10,
+      11,
+      12,
+      13,
       2,
       3,
       4,
       5,
-      6
+      6,
+      7,
+      8,
+      9
     ]
   }
 }
