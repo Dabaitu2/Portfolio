@@ -551,15 +551,20 @@ var Profile = function Profile() {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProjectDetailItem", function() { return ProjectDetailItem; });
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _index_module_less__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.module.less */ "./components/Projects/ProjectDetail/index.module.less");
-/* harmony import */ var _index_module_less__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_index_module_less__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _common_LazyLoadImg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../common/LazyLoadImg */ "./components/common/LazyLoadImg/index.tsx");
+/* harmony import */ var _babel_runtime_corejs2_core_js_array_from__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/array/from */ "./node_modules/@babel/runtime-corejs2/core-js/array/from.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_array_from__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_array_from__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _index_module_less__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./index.module.less */ "./components/Projects/ProjectDetail/index.module.less");
+/* harmony import */ var _index_module_less__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_index_module_less__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _common_LazyLoadImg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../common/LazyLoadImg */ "./components/common/LazyLoadImg/index.tsx");
+
+
 
 var _jsxFileName = "/Users/tomokokawase/Desktop/Portfolio/components/Projects/ProjectDetail/index.tsx";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement;
 
 
 
@@ -569,93 +574,231 @@ var ProjectDetailItem = function ProjectDetailItem(props) {
       desc = props.desc,
       tags = props.tags,
       details = props.details,
-      mainColor = props.mainColor;
+      mainColor = props.mainColor,
+      detail_images_meta = props.detail_images_meta,
+      video = props.video,
+      affix_image_meta = props.affix_image_meta;
+  var videoRef = react__WEBPACK_IMPORTED_MODULE_3___default.a.useRef();
+
+  var _React$useState = react__WEBPACK_IMPORTED_MODULE_3___default.a.useState(undefined),
+      _React$useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__["default"])(_React$useState, 2),
+      played = _React$useState2[0],
+      setPlayed = _React$useState2[1];
+
+  Object(react__WEBPACK_IMPORTED_MODULE_3__["useEffect"])(function () {
+    if (videoRef.current && document) {
+      document.onscroll = function () {
+        if (videoRef.current.getBoundingClientRect().top < 700) {
+          if (played === undefined) {
+            videoRef.current.play();
+            setPlayed(true);
+          }
+        } else if (videoRef.current.getBoundingClientRect().bottom < 150) {
+          videoRef.current.pause();
+          setPlayed(false);
+        }
+      };
+    }
+  }, [videoRef, document, played]);
   return __jsx("div", {
-    className: _index_module_less__WEBPACK_IMPORTED_MODULE_2___default.a['project-detail-item'],
+    className: _index_module_less__WEBPACK_IMPORTED_MODULE_4___default.a['project-detail-item'],
     style: {
       color: mainColor
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 60
     },
     __self: this
   }, __jsx("div", {
-    className: _index_module_less__WEBPACK_IMPORTED_MODULE_2___default.a['project-detail-images'],
+    className: _index_module_less__WEBPACK_IMPORTED_MODULE_4___default.a['project-detail-images'],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 66
     },
     __self: this
   }, images.map(function (image) {
-    return __jsx(_common_LazyLoadImg__WEBPACK_IMPORTED_MODULE_3__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, image, {
-      className: _index_module_less__WEBPACK_IMPORTED_MODULE_2___default.a['project-detail-image'],
+    return __jsx(_common_LazyLoadImg__WEBPACK_IMPORTED_MODULE_5__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, image, {
+      className: _index_module_less__WEBPACK_IMPORTED_MODULE_4___default.a['project-detail-image'],
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 27
+        lineNumber: 68
       },
       __self: this
     }));
   })), __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 71
     },
     __self: this
   }, __jsx("div", {
-    className: _index_module_less__WEBPACK_IMPORTED_MODULE_2___default.a['project-detail-title'],
+    className: _index_module_less__WEBPACK_IMPORTED_MODULE_4___default.a['project-detail-title'],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 72
     },
     __self: this
   }, title), __jsx("div", {
-    className: _index_module_less__WEBPACK_IMPORTED_MODULE_2___default.a['project-detail-subtitle'],
+    className: _index_module_less__WEBPACK_IMPORTED_MODULE_4___default.a['project-detail-subtitle'],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 73
     },
     __self: this
   }, desc.map(function (d) {
     return __jsx("span", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 34
+        lineNumber: 75
       },
       __self: this
     }, d);
   }))), __jsx("div", {
-    className: _index_module_less__WEBPACK_IMPORTED_MODULE_2___default.a['project-detail-details'],
+    className: _index_module_less__WEBPACK_IMPORTED_MODULE_4___default.a['project-detail-details'],
     style: {
       backgroundColor: mainColor
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 79
     },
     __self: this
   }, __jsx("div", {
-    className: _index_module_less__WEBPACK_IMPORTED_MODULE_2___default.a['project-detail-tags'],
+    className: _index_module_less__WEBPACK_IMPORTED_MODULE_4___default.a['project-detail-tags'],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 85
     },
     __self: this
   }, tags.map(function (t) {
     return __jsx("span", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 46
+        lineNumber: 87
       },
       __self: this
     }, t);
   })), __jsx("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 90
     },
     __self: this
-  }, details)));
+  }, details)), __jsx("div", {
+    style: {
+      fontSize: 0
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 92
+    },
+    __self: this
+  }, _babel_runtime_corejs2_core_js_array_from__WEBPACK_IMPORTED_MODULE_0___default()({
+    length: detail_images_meta.num
+  }).map(function (_, i) {
+    if (i === 0) {
+      return;
+    }
+
+    var common_file = detail_images_meta.dir + '/' + (i + 1).toString();
+    return __jsx(_common_LazyLoadImg__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      src: common_file + '.jpg',
+      sources: [{
+        type: 'image/webp',
+        src: common_file + '.webp'
+      }],
+      preview_src: common_file + '-preview.jpg',
+      preview_sources: [{
+        type: 'image/webp',
+        src: common_file + '-preview.webp'
+      }],
+      className: _index_module_less__WEBPACK_IMPORTED_MODULE_4___default.a['project-detail-details-images'],
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 103
+      },
+      __self: this
+    });
+  }), video ? video.map(function (v) {
+    return __jsx("div", {
+      style: {
+        width: '1600rem',
+        position: 'relative'
+      },
+      onClick: function onClick() {
+        if (played) {
+          videoRef.current.pause();
+          setPlayed(false);
+        } else {
+          videoRef.current.play();
+          setPlayed(true);
+        }
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 122
+      },
+      __self: this
+    }, __jsx("div", {
+      style: {
+        letterSpacing: '30rem',
+        fontFamily: 'Sofia Pro Regular',
+        fontSize: '100rem',
+        lineHeight: '900rem',
+        textAlign: 'center',
+        overflow: 'hidden',
+        color: '#fff',
+        position: 'absolute',
+        width: '100%',
+        display: played == true ? 'none' : 'block'
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 137
+      },
+      __self: this
+    }, "PAUSE"), __jsx("video", {
+      src: v.src,
+      ref: videoRef,
+      autoPlay: false,
+      style: {
+        width: '100%',
+        "float": 'left'
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 153
+      },
+      __self: this
+    }));
+  }) : null, affix_image_meta ? _babel_runtime_corejs2_core_js_array_from__WEBPACK_IMPORTED_MODULE_0___default()({
+    length: affix_image_meta.num
+  }).map(function (_, i) {
+    if (i === 0) {
+      return;
+    }
+
+    var common_file = affix_image_meta.dir + '/' + (detail_images_meta.num + i + 1).toString();
+    return __jsx(_common_LazyLoadImg__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      src: common_file + '.jpg',
+      sources: [{
+        type: 'image/webp',
+        src: common_file + '.webp'
+      }],
+      preview_src: common_file + '-preview.jpg',
+      preview_sources: [{
+        type: 'image/webp',
+        src: common_file + '-preview.webp'
+      }],
+      className: _index_module_less__WEBPACK_IMPORTED_MODULE_4___default.a['project-detail-details-images'],
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 176
+      },
+      __self: this
+    });
+  }) : null));
 };
 /* harmony default export */ __webpack_exports__["default"] = (ProjectDetailItem);
 
@@ -1392,6 +1535,17 @@ var Subtitle = function Subtitle(props) {
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/array/from.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/array/from.js ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/array/from */ "./node_modules/core-js/library/fn/array/from.js");
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js":
 /*!***********************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js ***!
@@ -2086,6 +2240,20 @@ module.exports = _typeof;
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! regenerator-runtime */ "./node_modules/regenerator-runtime/runtime.js");
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/fn/array/from.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/core-js/library/fn/array/from.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ../../modules/es6.string.iterator */ "./node_modules/core-js/library/modules/es6.string.iterator.js");
+__webpack_require__(/*! ../../modules/es6.array.from */ "./node_modules/core-js/library/modules/es6.array.from.js");
+module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Array.from;
 
 
 /***/ }),
@@ -4654,6 +4822,55 @@ module.exports = __webpack_require__(/*! ./_core */ "./node_modules/core-js/libr
     // eslint-disable-next-line no-prototype-builtins
     || Iterators.hasOwnProperty(classof(O));
 };
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/es6.array.from.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es6.array.from.js ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var ctx = __webpack_require__(/*! ./_ctx */ "./node_modules/core-js/library/modules/_ctx.js");
+var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
+var toObject = __webpack_require__(/*! ./_to-object */ "./node_modules/core-js/library/modules/_to-object.js");
+var call = __webpack_require__(/*! ./_iter-call */ "./node_modules/core-js/library/modules/_iter-call.js");
+var isArrayIter = __webpack_require__(/*! ./_is-array-iter */ "./node_modules/core-js/library/modules/_is-array-iter.js");
+var toLength = __webpack_require__(/*! ./_to-length */ "./node_modules/core-js/library/modules/_to-length.js");
+var createProperty = __webpack_require__(/*! ./_create-property */ "./node_modules/core-js/library/modules/_create-property.js");
+var getIterFn = __webpack_require__(/*! ./core.get-iterator-method */ "./node_modules/core-js/library/modules/core.get-iterator-method.js");
+
+$export($export.S + $export.F * !__webpack_require__(/*! ./_iter-detect */ "./node_modules/core-js/library/modules/_iter-detect.js")(function (iter) { Array.from(iter); }), 'Array', {
+  // 22.1.2.1 Array.from(arrayLike, mapfn = undefined, thisArg = undefined)
+  from: function from(arrayLike /* , mapfn = undefined, thisArg = undefined */) {
+    var O = toObject(arrayLike);
+    var C = typeof this == 'function' ? this : Array;
+    var aLen = arguments.length;
+    var mapfn = aLen > 1 ? arguments[1] : undefined;
+    var mapping = mapfn !== undefined;
+    var index = 0;
+    var iterFn = getIterFn(O);
+    var length, result, step, iterator;
+    if (mapping) mapfn = ctx(mapfn, aLen > 2 ? arguments[2] : undefined, 2);
+    // if object isn't iterable or it's array with default iterator - use simple case
+    if (iterFn != undefined && !(C == Array && isArrayIter(iterFn))) {
+      for (iterator = iterFn.call(O), result = new C(); !(step = iterator.next()).done; index++) {
+        createProperty(result, index, mapping ? call(iterator, mapfn, [step.value, index], true) : step.value);
+      }
+    } else {
+      length = toLength(O.length);
+      for (result = new C(length); length > index; index++) {
+        createProperty(result, index, mapping ? mapfn(O[index], index) : O[index]);
+      }
+    }
+    result.length = index;
+    return result;
+  }
+});
 
 
 /***/ }),
@@ -10470,7 +10687,11 @@ var Info = {
       type: 'image/webp'
     }],
     alt: 'rhino'
-  }]
+  }],
+  detail_images_meta: {
+    dir: '/static/images/projectDetails/xixi4rhino',
+    num: 7
+  }
 };
 var menuItems = [{
   key: 'xixi4rhino',
@@ -10549,38 +10770,38 @@ var InnerLayout = function InnerLayout() {
     className: _index_less__WEBPACK_IMPORTED_MODULE_2___default.a.layout,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 135
+      lineNumber: 139
     },
     __self: this
   }, __jsx(_components_LayoutHeader__WEBPACK_IMPORTED_MODULE_3__["default"], {
     menuItems: menuItems,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 136
+      lineNumber: 140
     },
     __self: this
   }), __jsx(_components_ContentSwitcher__WEBPACK_IMPORTED_MODULE_5__["ContentSwitcher"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 137
+      lineNumber: 141
     },
     __self: this
   }, __jsx(_components_Profile__WEBPACK_IMPORTED_MODULE_9__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 138
+      lineNumber: 142
     },
     __self: this
   }), __jsx(_components_Projects_ProjectDetail__WEBPACK_IMPORTED_MODULE_8__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, Info, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 139
+      lineNumber: 143
     },
     __self: this
   })), __jsx(_components_Projects__WEBPACK_IMPORTED_MODULE_10__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 140
+      lineNumber: 144
     },
     __self: this
   })), __jsx(_components_LayoutHeader__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -10590,7 +10811,7 @@ var InnerLayout = function InnerLayout() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 142
+      lineNumber: 146
     },
     __self: this
   })) : null;
@@ -10600,13 +10821,13 @@ var Layout = function Layout() {
   return __jsx(_utils_hooks_useCurrentTab__WEBPACK_IMPORTED_MODULE_4__["CurrentTabProvider"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 154
+      lineNumber: 158
     },
     __self: this
   }, __jsx(InnerLayout, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 155
+      lineNumber: 159
     },
     __self: this
   }));
@@ -10881,7 +11102,7 @@ var useResizeCallback = function useResizeCallback(fallBackHandler) {
 
 /***/ }),
 
-/***/ 14:
+/***/ 1:
 /*!***********************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fprojects%2Fxixi4rhino&absolutePagePath=%2FUsers%2Ftomokokawase%2FDesktop%2FPortfolio%2Fpages%2Fprojects%2Fxixi4rhino.tsx ***!
   \***********************************************************************************************************************************************************************/
@@ -10904,5 +11125,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[14,"static/runtime/webpack.js","styles"]]]);
+},[[1,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=xixi4rhino.js.map

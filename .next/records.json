@@ -1,4 +1,21 @@
 {
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--7-1!node_modules/less-loader/dist/cjs.js??ref--7-2!pages/index.less": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
   "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--7-1!node_modules/less-loader/dist/cjs.js??ref--7-2!pages/projects/dual-layer-solution.less": [
     {
       "modules": {
@@ -16,7 +33,7 @@
       }
     }
   ],
-  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--7-1!node_modules/less-loader/dist/cjs.js??ref--7-2!pages/index.less": [
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--7-1!node_modules/less-loader/dist/cjs.js??ref--7-2!components/LayoutHeader/index.module.less": [
     {
       "modules": {
         "byIdentifier": {},
@@ -67,23 +84,6 @@
       }
     }
   ],
-  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--7-1!node_modules/less-loader/dist/cjs.js??ref--7-2!components/LayoutHeader/index.module.less": [
-    {
-      "modules": {
-        "byIdentifier": {},
-        "usedIds": {}
-      },
-      "chunks": {
-        "byName": {
-          "mini-css-extract-plugin": 0
-        },
-        "bySource": {},
-        "usedIds": [
-          0
-        ]
-      }
-    }
-  ],
   "worker": [
     {
       "modules": {
@@ -93,23 +93,6 @@
       "chunks": {
         "byName": {
           "main": 0
-        },
-        "bySource": {},
-        "usedIds": [
-          0
-        ]
-      }
-    }
-  ],
-  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--7-1!node_modules/less-loader/dist/cjs.js??ref--7-2!components/Profile/Contact/index.module.less": [
-    {
-      "modules": {
-        "byIdentifier": {},
-        "usedIds": {}
-      },
-      "chunks": {
-        "byName": {
-          "mini-css-extract-plugin": 0
         },
         "bySource": {},
         "usedIds": [
@@ -135,7 +118,7 @@
       }
     }
   ],
-  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--7-1!node_modules/less-loader/dist/cjs.js??ref--7-2!components/common/Pharse/index.module.less": [
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--7-1!node_modules/less-loader/dist/cjs.js??ref--7-2!components/Profile/Contact/index.module.less": [
     {
       "modules": {
         "byIdentifier": {},
@@ -169,7 +152,7 @@
       }
     }
   ],
-  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--7-1!node_modules/less-loader/dist/cjs.js??ref--7-2!components/common/BoldenInformation/index.module.less": [
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--7-1!node_modules/less-loader/dist/cjs.js??ref--7-2!components/common/Pharse/index.module.less": [
     {
       "modules": {
         "byIdentifier": {},
@@ -187,6 +170,23 @@
     }
   ],
   "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--7-1!node_modules/less-loader/dist/cjs.js??ref--7-2!components/common/PharseInformation/index.module.less": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--7-1!node_modules/less-loader/dist/cjs.js??ref--7-2!components/common/BoldenInformation/index.module.less": [
     {
       "modules": {
         "byIdentifier": {},
@@ -276,21 +276,21 @@
       "commons": 0,
       "static/runtime/webpack.js": 1,
       "framework": 2,
-      "1e60010af0db51edbf23a038b6e12a63109dd458": 3,
-      "f0cbac876d82b25c3e44f9fa061a136f7249dcdd": 4,
+      "dbc99a2d3ae15468fb6ca13f8042ddc86f493a92": 3,
+      "0badb89daabdb5c02efb4d40dfec9b1fda611915": 4,
       "styles": 5,
       "801a6084": 6,
-      "static/hGINQNlJQiPQhent651n5/pages/_app.js": 7,
-      "static/hGINQNlJQiPQhent651n5/pages/_error.js": 8,
-      "static/hGINQNlJQiPQhent651n5/pages/index.js": 9,
-      "static/hGINQNlJQiPQhent651n5/pages/projects/bamboo.js": 10,
-      "static/hGINQNlJQiPQhent651n5/pages/projects/dual-layer-solution.js": 11,
-      "static/hGINQNlJQiPQhent651n5/pages/projects/dual-layer.js": 12,
-      "static/hGINQNlJQiPQhent651n5/pages/projects/emo.js": 13,
-      "static/hGINQNlJQiPQhent651n5/pages/projects/endless-form.js": 14,
-      "static/hGINQNlJQiPQhent651n5/pages/projects/flyro.js": 15,
-      "static/hGINQNlJQiPQhent651n5/pages/projects/string-board.js": 16,
-      "static/hGINQNlJQiPQhent651n5/pages/projects/xixi4rhino.js": 17,
+      "static/UD-8OBzAPpBNvaZto-04_/pages/_app.js": 7,
+      "static/UD-8OBzAPpBNvaZto-04_/pages/_error.js": 8,
+      "static/UD-8OBzAPpBNvaZto-04_/pages/index.js": 9,
+      "static/UD-8OBzAPpBNvaZto-04_/pages/projects/bamboo.js": 10,
+      "static/UD-8OBzAPpBNvaZto-04_/pages/projects/dual-layer-solution.js": 11,
+      "static/UD-8OBzAPpBNvaZto-04_/pages/projects/dual-layer.js": 12,
+      "static/UD-8OBzAPpBNvaZto-04_/pages/projects/emo.js": 13,
+      "static/UD-8OBzAPpBNvaZto-04_/pages/projects/endless-form.js": 14,
+      "static/UD-8OBzAPpBNvaZto-04_/pages/projects/flyro.js": 15,
+      "static/UD-8OBzAPpBNvaZto-04_/pages/projects/string-board.js": 16,
+      "static/UD-8OBzAPpBNvaZto-04_/pages/projects/xixi4rhino.js": 17,
       "static/runtime/main.js": 18,
       "static/runtime/polyfills.js": 19
     },

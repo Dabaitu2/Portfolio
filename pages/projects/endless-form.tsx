@@ -41,7 +41,11 @@ const Info: ProjectDetailInfoProps = {
       ],
       alt: 'Endless Form'
     }
-  ]
+  ],
+  detail_images_meta: {
+    dir: '/static/images/projectDetails/endlessform',
+    num: 5
+  },
 };
 const menuItems = [
   {

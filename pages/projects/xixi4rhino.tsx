@@ -44,7 +44,11 @@ const Info: ProjectDetailInfoProps = {
       ],
       alt: 'rhino'
     }
-  ]
+  ],
+  detail_images_meta: {
+    dir: '/static/images/projectDetails/xixi4rhino',
+    num: 7
+  },
 };
 const menuItems = [
   {

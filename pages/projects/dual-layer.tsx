@@ -42,7 +42,11 @@ const Info: ProjectDetailInfoProps = {
       ],
       alt: 'dual-layer'
     }
-  ]
+  ],
+  detail_images_meta: {
+    dir: '/static/images/projectDetails/dual-layer-solution',
+    num: 8
+  },
 };
 const menuItems = [
   {

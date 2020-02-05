@@ -43,7 +43,18 @@ const Info: ProjectDetailInfoProps = {
       ],
       alt: 'Flyro'
     }
-  ]
+  ],
+  detail_images_meta: {
+    dir: '/static/images/projectDetails/flyro',
+    num: 11
+  },
+  video: [{
+    src: '/static/videos/flyro.mp4'
+  }],
+  affix_image_meta: {
+    dir: '/static/images/projectDetails/flyro',
+    num: 9
+  }
 };
 const menuItems = [
   {

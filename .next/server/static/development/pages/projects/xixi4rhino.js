@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -691,7 +691,8 @@ module.exports = {
 	"project-detail-title": "project-detail-title___1xjA0",
 	"project-detail-subtitle": "project-detail-subtitle___31b4C",
 	"project-detail-details": "project-detail-details___1UI-I",
-	"project-detail-tags": "project-detail-tags___2Cbgb"
+	"project-detail-tags": "project-detail-tags___2Cbgb",
+	"project-detail-details-images": "project-detail-details-images___24caU"
 };
 
 /***/ }),
@@ -726,8 +727,28 @@ const ProjectDetailItem = props => {
     desc,
     tags,
     details,
-    mainColor
+    mainColor,
+    detail_images_meta,
+    video,
+    affix_image_meta
   } = props;
+  const videoRef = react__WEBPACK_IMPORTED_MODULE_0___default.a.useRef();
+  const [played, setPlayed] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(undefined);
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    if (videoRef.current && document) {
+      document.onscroll = () => {
+        if (videoRef.current.getBoundingClientRect().top < 700) {
+          if (played === undefined) {
+            videoRef.current.play();
+            setPlayed(true);
+          }
+        } else if (videoRef.current.getBoundingClientRect().bottom < 150) {
+          videoRef.current.pause();
+          setPlayed(false);
+        }
+      };
+    }
+  }, [videoRef, document, played]);
   return __jsx("div", {
     className: _index_module_less__WEBPACK_IMPORTED_MODULE_1___default.a['project-detail-item'],
     style: {
@@ -735,47 +756,47 @@ const ProjectDetailItem = props => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 60
     },
     __self: undefined
   }, __jsx("div", {
     className: _index_module_less__WEBPACK_IMPORTED_MODULE_1___default.a['project-detail-images'],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 66
     },
     __self: undefined
   }, images.map(image => __jsx(_common_LazyLoadImg__WEBPACK_IMPORTED_MODULE_2__["default"], _extends({}, image, {
     className: _index_module_less__WEBPACK_IMPORTED_MODULE_1___default.a['project-detail-image'],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 68
     },
     __self: undefined
   })))), __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 71
     },
     __self: undefined
   }, __jsx("div", {
     className: _index_module_less__WEBPACK_IMPORTED_MODULE_1___default.a['project-detail-title'],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 72
     },
     __self: undefined
   }, title), __jsx("div", {
     className: _index_module_less__WEBPACK_IMPORTED_MODULE_1___default.a['project-detail-subtitle'],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 73
     },
     __self: undefined
   }, desc.map(d => __jsx("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 75
     },
     __self: undefined
   }, d)))), __jsx("div", {
@@ -785,29 +806,142 @@ const ProjectDetailItem = props => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 79
     },
     __self: undefined
   }, __jsx("div", {
     className: _index_module_less__WEBPACK_IMPORTED_MODULE_1___default.a['project-detail-tags'],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 85
     },
     __self: undefined
   }, tags.map(t => __jsx("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 87
     },
     __self: undefined
   }, t))), __jsx("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 90
     },
     __self: undefined
-  }, details)));
+  }, details)), __jsx("div", {
+    style: {
+      fontSize: 0
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 92
+    },
+    __self: undefined
+  }, Array.from({
+    length: detail_images_meta.num
+  }).map((_, i) => {
+    if (i === 0) {
+      return;
+    }
+
+    const common_file = detail_images_meta.dir + '/' + (i + 1).toString();
+    return __jsx(_common_LazyLoadImg__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      src: common_file + '.jpg',
+      sources: [{
+        type: 'image/webp',
+        src: common_file + '.webp'
+      }],
+      preview_src: common_file + '-preview.jpg',
+      preview_sources: [{
+        type: 'image/webp',
+        src: common_file + '-preview.webp'
+      }],
+      className: _index_module_less__WEBPACK_IMPORTED_MODULE_1___default.a['project-detail-details-images'],
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 103
+      },
+      __self: undefined
+    });
+  }), video ? video.map(v => {
+    return __jsx("div", {
+      style: {
+        width: '1600rem',
+        position: 'relative'
+      },
+      onClick: () => {
+        if (played) {
+          videoRef.current.pause();
+          setPlayed(false);
+        } else {
+          videoRef.current.play();
+          setPlayed(true);
+        }
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 122
+      },
+      __self: undefined
+    }, __jsx("div", {
+      style: {
+        letterSpacing: '30rem',
+        fontFamily: 'Sofia Pro Regular',
+        fontSize: '100rem',
+        lineHeight: '900rem',
+        textAlign: 'center',
+        overflow: 'hidden',
+        color: '#fff',
+        position: 'absolute',
+        width: '100%',
+        display: played == true ? 'none' : 'block'
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 137
+      },
+      __self: undefined
+    }, "PAUSE"), __jsx("video", {
+      src: v.src,
+      ref: videoRef,
+      autoPlay: false,
+      style: {
+        width: '100%',
+        float: 'left'
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 153
+      },
+      __self: undefined
+    }));
+  }) : null, affix_image_meta ? Array.from({
+    length: affix_image_meta.num
+  }).map((_, i) => {
+    if (i === 0) {
+      return;
+    }
+
+    const common_file = affix_image_meta.dir + '/' + (detail_images_meta.num + i + 1).toString();
+    return __jsx(_common_LazyLoadImg__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      src: common_file + '.jpg',
+      sources: [{
+        type: 'image/webp',
+        src: common_file + '.webp'
+      }],
+      preview_src: common_file + '-preview.jpg',
+      preview_sources: [{
+        type: 'image/webp',
+        src: common_file + '-preview.webp'
+      }],
+      className: _index_module_less__WEBPACK_IMPORTED_MODULE_1___default.a['project-detail-details-images'],
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 176
+      },
+      __self: undefined
+    });
+  }) : null));
 };
 /* harmony default export */ __webpack_exports__["default"] = (ProjectDetailItem);
 
@@ -1717,7 +1851,11 @@ const Info = {
       type: 'image/webp'
     }],
     alt: 'rhino'
-  }]
+  }],
+  detail_images_meta: {
+    dir: '/static/images/projectDetails/xixi4rhino',
+    num: 7
+  }
 };
 const menuItems = [{
   key: 'xixi4rhino',
@@ -1800,38 +1938,38 @@ const InnerLayout = () => {
     className: _index_less__WEBPACK_IMPORTED_MODULE_1___default.a.layout,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 135
+      lineNumber: 139
     },
     __self: undefined
   }, __jsx(_components_LayoutHeader__WEBPACK_IMPORTED_MODULE_2__["default"], {
     menuItems: menuItems,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 136
+      lineNumber: 140
     },
     __self: undefined
   }), __jsx(_components_ContentSwitcher__WEBPACK_IMPORTED_MODULE_4__["ContentSwitcher"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 137
+      lineNumber: 141
     },
     __self: undefined
   }, __jsx(_components_Profile__WEBPACK_IMPORTED_MODULE_8__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 138
+      lineNumber: 142
     },
     __self: undefined
   }), __jsx(_components_Projects_ProjectDetail__WEBPACK_IMPORTED_MODULE_7__["default"], _extends({}, Info, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 139
+      lineNumber: 143
     },
     __self: undefined
   })), __jsx(_components_Projects__WEBPACK_IMPORTED_MODULE_9__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 140
+      lineNumber: 144
     },
     __self: undefined
   })), __jsx(_components_LayoutHeader__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -1841,7 +1979,7 @@ const InnerLayout = () => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 142
+      lineNumber: 146
     },
     __self: undefined
   })) : null;
@@ -1851,13 +1989,13 @@ const Layout = () => {
   return __jsx(_utils_hooks_useCurrentTab__WEBPACK_IMPORTED_MODULE_3__["CurrentTabProvider"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 154
+      lineNumber: 158
     },
     __self: undefined
   }, __jsx(InnerLayout, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 155
+      lineNumber: 159
     },
     __self: undefined
   }));
@@ -2094,7 +2232,7 @@ const useResizeCallback = fallBackHandler => {
 
 /***/ }),
 
-/***/ 5:
+/***/ 3:
 /*!*********************************************!*\
   !*** multi ./pages/projects/xixi4rhino.tsx ***!
   \*********************************************/

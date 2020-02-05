@@ -41,7 +41,11 @@ const Info: ProjectDetailInfoProps = {
       ],
       alt: 'EMO'
     }
-  ]
+  ],
+  detail_images_meta: {
+    dir: '/static/images/projectDetails/emo',
+    num: 7
+  },
 };
 const menuItems = [
   {

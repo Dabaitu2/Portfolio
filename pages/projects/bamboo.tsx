@@ -42,7 +42,11 @@ const Info: ProjectDetailInfoProps = {
       ],
       alt: 'String board'
     }
-  ]
+  ],
+  detail_images_meta: {
+    dir: '/static/images/projectDetails/bamboo-stool',
+    num: 4
+  },
 };
 const menuItems = [
   {

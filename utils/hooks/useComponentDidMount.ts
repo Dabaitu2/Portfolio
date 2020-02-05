@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 export const useComponentDidMount = (
   handler: () => any,
-  postHandler?: () => any
+  postHandler?: () => any,
 ) => {
   const [firstLoaded, setFirstLoaded] = useState(false);
   const [IsDone, setIsDone] = useState(false);

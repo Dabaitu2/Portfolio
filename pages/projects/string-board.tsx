@@ -40,6 +40,10 @@ const Info: ProjectDetailInfoProps = {
   title: 'Stringboard',
   desc: ['an input tool and', 'an electronic instrument'],
   tags: ['Integrated Product Development | Interaction Design | Personal Work | Apr 2017 '],
+  detail_images_meta: {
+    dir: '/static/images/projectDetails/stringboard',
+    num: 5
+  },
   details:
     'Stringboard is an input tool as well as an electronic instrument, inspired by Chinese instrument Guqin, bringing the ancient Chinese poetic experience to modern life. \n' +
     'Stringboard comes from the combination of “string” and “board”. The long-shaped metal “string” imitates the image of the string, applying the surface acoustic wave touch technology, so that the user only needs to stroke slightly to input information and use unique shortcut input gesture. The stroking and swiping finger gestures are like playing the Guqin. And Stringboard applys natural material, such as black walnut or bamboo, which highlights the metal string at the same time.'
