@@ -14,6 +14,7 @@ import ProjectDetailItem, {
 } from '../../components/Projects/ProjectDetail';
 import Profile from '../../components/Profile';
 import Projects from '../../components/Projects';
+import RhinoStyles from './xixi4rhino.less';
 
 const DESIGN_WIDTH = 1920;
 const COMMON_STATIC_PATH = '/static/images/projectDetails/img';
@@ -47,8 +48,17 @@ const Info: ProjectDetailInfoProps = {
   ],
   detail_images_meta: {
     dir: '/static/images/projectDetails/xixi4rhino',
-    num: 7
+    num: 2
   },
+  links: [{
+    src: 'http://144.34.173.162/foreign-projects/project-rhino/#/',
+    desc: 'Click Here To Enter www.xixi4rhino.com',
+    className: RhinoStyles['link']
+  }],
+  affix_image_meta: {
+    dir: '/static/images/projectDetails/xixi4rhino',
+    num: 5
+  }
 };
 const menuItems = [
   {

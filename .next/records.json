@@ -1,4 +1,21 @@
 {
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--7-1!node_modules/less-loader/dist/cjs.js??ref--7-2!pages/projects/dual-layer-solution.less": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
   "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--7-1!node_modules/less-loader/dist/cjs.js??ref--7-2!pages/index.less": [
     {
       "modules": {
@@ -16,7 +33,7 @@
       }
     }
   ],
-  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--7-1!node_modules/less-loader/dist/cjs.js??ref--7-2!pages/projects/dual-layer-solution.less": [
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--7-1!node_modules/less-loader/dist/cjs.js??ref--7-2!pages/projects/xixi4rhino.less": [
     {
       "modules": {
         "byIdentifier": {},
@@ -101,7 +118,7 @@
       }
     }
   ],
-  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--7-1!node_modules/less-loader/dist/cjs.js??ref--7-2!components/Profile/Contact/index.module.less": [
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--7-1!node_modules/less-loader/dist/cjs.js??ref--7-2!components/Profile/Banner/index.module.less": [
     {
       "modules": {
         "byIdentifier": {},
@@ -118,7 +135,7 @@
       }
     }
   ],
-  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--7-1!node_modules/less-loader/dist/cjs.js??ref--7-2!components/Projects/ProjectIndexItem/index.module.less": [
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--7-1!node_modules/less-loader/dist/cjs.js??ref--7-2!components/Profile/Contact/index.module.less": [
     {
       "modules": {
         "byIdentifier": {},
@@ -152,7 +169,7 @@
       }
     }
   ],
-  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--7-1!node_modules/less-loader/dist/cjs.js??ref--7-2!components/Profile/Banner/index.module.less": [
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--7-1!node_modules/less-loader/dist/cjs.js??ref--7-2!components/Projects/ProjectIndexItem/index.module.less": [
     {
       "modules": {
         "byIdentifier": {},
@@ -203,7 +220,7 @@
       }
     }
   ],
-  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--7-1!node_modules/less-loader/dist/cjs.js??ref--7-2!components/common/SubTitle/index.module.less": [
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--7-1!node_modules/less-loader/dist/cjs.js??ref--7-2!components/common/Description/index.module.less": [
     {
       "modules": {
         "byIdentifier": {},
@@ -220,7 +237,7 @@
       }
     }
   ],
-  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--7-1!node_modules/less-loader/dist/cjs.js??ref--7-2!components/common/Description/index.module.less": [
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--7-1!node_modules/less-loader/dist/cjs.js??ref--7-2!components/common/SubTitle/index.module.less": [
     {
       "modules": {
         "byIdentifier": {},
@@ -252,7 +269,8 @@
       "css node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--7-1!node_modules/less-loader/dist/cjs.js??ref--7-2!components/Projects/index.module.less 0": 10,
       "css node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--7-1!node_modules/less-loader/dist/cjs.js??ref--7-2!components/Projects/ProjectIndexItem/index.module.less 0": 11,
       "css node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--7-1!node_modules/less-loader/dist/cjs.js??ref--7-2!components/Projects/ProjectDetail/index.module.less 0": 12,
-      "css node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--7-1!node_modules/less-loader/dist/cjs.js??ref--7-2!pages/projects/dual-layer-solution.less 0": 13
+      "css node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--7-1!node_modules/less-loader/dist/cjs.js??ref--7-2!pages/projects/dual-layer-solution.less 0": 13,
+      "css node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--7-1!node_modules/less-loader/dist/cjs.js??ref--7-2!pages/projects/xixi4rhino.less 0": 14
     },
     "usedIds": {
       "0": 0,
@@ -268,7 +286,8 @@
       "10": 10,
       "11": 11,
       "12": 12,
-      "13": 13
+      "13": 13,
+      "14": 14
     }
   },
   "chunks": {
@@ -276,59 +295,48 @@
       "commons": 0,
       "static/runtime/webpack.js": 1,
       "framework": 2,
-      "e398f71f469a89c72a7fec53cb59495592bbad6f": 3,
-      "45280c4e3e4c10182e98be2fd97b7c5f91095db4": 4,
+      "58c01ecf9404d858fae5525899acb7ee5b5fb7cd": 3,
+      "fea57fc7b3a943480c17140d203a1f3b7578c8a3": 4,
       "styles": 5,
       "801a6084": 6,
-      "static/Tw33eknEFwtzhJi9bS1on/pages/_app.js": 7,
-      "static/Tw33eknEFwtzhJi9bS1on/pages/_error.js": 8,
-      "static/Tw33eknEFwtzhJi9bS1on/pages/index.js": 9,
-      "static/Tw33eknEFwtzhJi9bS1on/pages/projects/bamboo.js": 10,
-      "static/Tw33eknEFwtzhJi9bS1on/pages/projects/dual-layer-solution.js": 11,
-      "static/Tw33eknEFwtzhJi9bS1on/pages/projects/dual-layer.js": 12,
-      "static/Tw33eknEFwtzhJi9bS1on/pages/projects/emo.js": 13,
-      "static/Tw33eknEFwtzhJi9bS1on/pages/projects/endless-form.js": 14,
-      "static/Tw33eknEFwtzhJi9bS1on/pages/projects/flyro.js": 15,
-      "static/Tw33eknEFwtzhJi9bS1on/pages/projects/string-board.js": 16,
-      "static/Tw33eknEFwtzhJi9bS1on/pages/projects/xixi4rhino.js": 17,
-      "static/runtime/main.js": 18,
-      "static/runtime/polyfills.js": 19,
-      "ab192c10dfae501274f786f537b3b56cf270132a": 20,
-      "87dc72a84b07fa8e76ca2d31cb2256cbc775485f": 21,
-      "static/_ou08BGw9fzEkp2TEeZMr/pages/_app.js": 22,
-      "static/_ou08BGw9fzEkp2TEeZMr/pages/_error.js": 23,
-      "static/_ou08BGw9fzEkp2TEeZMr/pages/index.js": 24,
-      "static/_ou08BGw9fzEkp2TEeZMr/pages/projects/bamboo.js": 25,
-      "static/_ou08BGw9fzEkp2TEeZMr/pages/projects/dual-layer-solution.js": 26,
-      "static/_ou08BGw9fzEkp2TEeZMr/pages/projects/dual-layer.js": 27,
-      "static/_ou08BGw9fzEkp2TEeZMr/pages/projects/emo.js": 28,
-      "static/_ou08BGw9fzEkp2TEeZMr/pages/projects/endless-form.js": 29,
-      "static/_ou08BGw9fzEkp2TEeZMr/pages/projects/flyro.js": 30,
-      "static/_ou08BGw9fzEkp2TEeZMr/pages/projects/string-board.js": 31,
-      "static/_ou08BGw9fzEkp2TEeZMr/pages/projects/xixi4rhino.js": 32
+      "static/Zm2q1QUCUqrvYAyeEz54X/pages/_app.js": 7,
+      "static/Zm2q1QUCUqrvYAyeEz54X/pages/_error.js": 8,
+      "static/Zm2q1QUCUqrvYAyeEz54X/pages/index.js": 9,
+      "static/Zm2q1QUCUqrvYAyeEz54X/pages/projects/bamboo.js": 10,
+      "static/Zm2q1QUCUqrvYAyeEz54X/pages/projects/cultural-jewelry.js": 11,
+      "static/Zm2q1QUCUqrvYAyeEz54X/pages/projects/dual-layer-solution.js": 12,
+      "static/Zm2q1QUCUqrvYAyeEz54X/pages/projects/dual-layer.js": 13,
+      "static/Zm2q1QUCUqrvYAyeEz54X/pages/projects/emo.js": 14,
+      "static/Zm2q1QUCUqrvYAyeEz54X/pages/projects/endless-form.js": 15,
+      "static/Zm2q1QUCUqrvYAyeEz54X/pages/projects/flyro.js": 16,
+      "static/Zm2q1QUCUqrvYAyeEz54X/pages/projects/string-board.js": 17,
+      "static/Zm2q1QUCUqrvYAyeEz54X/pages/projects/xixi4rhino.js": 18,
+      "static/runtime/main.js": 19,
+      "static/runtime/polyfills.js": 20
     },
     "bySource": {},
     "usedIds": [
       0,
       1,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
       18,
       19,
       2,
       20,
-      21,
-      22,
-      23,
-      24,
-      25,
-      26,
-      27,
-      28,
-      29,
-      30,
-      31,
-      32,
+      3,
+      4,
       5,
-      6
+      6,
+      7,
+      8,
+      9
     ]
   }
 }

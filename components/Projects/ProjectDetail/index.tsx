@@ -15,6 +15,11 @@ export interface ProjectDetailInfoProps {
     dir: string;
     num: number;
   };
+  links?: {
+    src: string
+    className: string,
+    desc: string
+  }[]
   video?: [
     {
       src: string;
@@ -33,6 +38,7 @@ export const ProjectDetailItem: FC<IProps> = (props: IProps) => {
     images,
     title,
     desc,
+    links,
     tags,
     details,
     mainColor,
@@ -110,7 +116,11 @@ export const ProjectDetailItem: FC<IProps> = (props: IProps) => {
             <span>{t}</span>
           ))}
         </div>
-        <span>{details}</span>
+        {details.length > 0 && (
+          <span className={styles['project-detail-details-desc']}>
+            {details}
+          </span>
+        )}
       </div>
       <div
         style={{
@@ -139,6 +149,9 @@ export const ProjectDetailItem: FC<IProps> = (props: IProps) => {
             />
           );
         })}
+        {
+          links && links.map(link => <a className={link.className} href={link.src} target={'blank'}>{link.desc}</a>)
+        }
         {video
           ? video.map(v => {
               return (

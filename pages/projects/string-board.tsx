@@ -42,7 +42,7 @@ const Info: ProjectDetailInfoProps = {
   tags: ['Integrated Product Development | Interaction Design | Personal Work | Apr 2017 '],
   detail_images_meta: {
     dir: '/static/images/projectDetails/stringboard',
-    num: 5
+    num: 6
   },
   details:
     'Stringboard is an input tool as well as an electronic instrument, inspired by Chinese instrument Guqin, bringing the ancient Chinese poetic experience to modern life. \n' +
