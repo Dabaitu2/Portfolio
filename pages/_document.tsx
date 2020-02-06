@@ -107,14 +107,14 @@ class MyDocument extends Document {
           />
           <link
             rel={'preload'}
-            href={`${IP}/Sofia Pro Semi Ultra Light.otf`}
+            href={`${IP}/Sofia Pro Ultra Light.otf`}
             as="font"
             type={'font/opentype'}
             crossOrigin="anonymous"
           />
           <link
             rel={'preload'}
-            href={`${IP}/Sofia Pro Semi Ultra Light.otf`}
+            href={`${IP}/Sofia Pro Ultra Light Italic.otf`}
             as="font"
             type={'font/opentype'}
             crossOrigin="anonymous"
