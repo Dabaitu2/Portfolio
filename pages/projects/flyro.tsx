@@ -21,10 +21,10 @@ const Info: ProjectDetailInfoProps = {
   desc: ['an inspiring spinning and', 'a mobile free zone'],
   mainColor: '#1F204F',
   details:
-    'To create a phone free zone, we offer you the optimal choice — flyro.It is a floating gyro, which can block and charge your phone.\n' +
-    'Once you plug in the phone, the gyro can be empowered and spin during your working time. If you plug out from the plate, it would lose power and stop after 15 minutes.\n' +
-    'Flyro helps you find the balance between work and play.',
-  tags: ['Integrated Product Development | Interaction Design | Team Work in 5 weeks | May 2018 '],
+    'Flyro is a floating gyro, which can block and charge your phone. Flyro could help you create a phone free zone and focus on your own business. Once you plug in your smart phone, the gyro can be empowered and spin during your working time. If you plug out your smart phone from the plate, it would lose power and stop after 15 minutes, which is the recommendation length of rest. Flyro helps you find the balance between work and play in modern world where smart phones are filled in every corner of our daily lives.',
+  tags: [
+    'Integrated Product Development | Interaction Design | Team Work in 5 weeks | May 2018 '
+  ],
   images: [
     {
       src: COMMON_STATIC_PATH + '3.jpg',
@@ -48,9 +48,11 @@ const Info: ProjectDetailInfoProps = {
     dir: '/static/images/projectDetails/flyro',
     num: 11
   },
-  video: [{
-    src: '/static/videos/flyro.mp4'
-  }],
+  video: [
+    {
+      src: '/static/videos/flyro.mp4'
+    }
+  ],
   affix_image_meta: {
     dir: '/static/images/projectDetails/flyro',
     num: 9

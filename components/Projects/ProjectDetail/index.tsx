@@ -1,8 +1,9 @@
 import React, { FC, useEffect } from 'react';
 import styles from './index.module.less';
 import LazyLoadImg, { LazyLoadImgProps } from '../../common/LazyLoadImg';
-import { useComponentDidMount } from '../../../utils/hooks/useComponentDidMount';
-
+import { useResizeCallback } from '../../../utils/hooks/useResizeCallback';
+import { useForceUpdate } from '../../../utils/hooks/useForceUpdate';
+import throttle from 'lodash/throttle';
 export interface ProjectDetailInfoProps {
   images: LazyLoadImgProps[];
   title: string;
@@ -39,23 +40,45 @@ export const ProjectDetailItem: FC<IProps> = (props: IProps) => {
     video,
     affix_image_meta
   } = props;
-  const videoRef = React.useRef<any>();
+  const videoRef = React.useRef<any>({
+    duration: 0,
+    currentTime: 0,
+    fake: true
+  });
   const [played, setPlayed] = React.useState<boolean | undefined>(undefined);
+  const [visible, setVisible] = React.useState<boolean>(false);
+  const { forceUpdate } = useForceUpdate();
+  const [progress, setProgress] = React.useState<number>(0);
   useEffect(() => {
-    if (videoRef.current && document) {
+    if (!videoRef.current.fake && document) {
       document.onscroll = () => {
-        if (videoRef.current.getBoundingClientRect().top < 700) {
+        if (videoRef.current!.getBoundingClientRect().top < 700) {
           if (played === undefined) {
             videoRef.current.play();
             setPlayed(true);
           }
-        } else if (videoRef.current.getBoundingClientRect().bottom < 150) {
+        } else if (videoRef.current!.getBoundingClientRect().bottom < 150) {
           videoRef.current.pause();
           setPlayed(false);
         }
       };
     }
-  }, [videoRef, document, played]);
+  }, [videoRef.current, document, played]);
+  const { addMustExecuteCallback } = useResizeCallback();
+  addMustExecuteCallback(() => {
+    forceUpdate();
+  });
+  useEffect(() => {
+    const handleTimeUpdate = throttle(() => {
+      setProgress(
+        (videoRef.current.currentTime / videoRef.current.duration) * 100
+      );
+    }, 500);
+    if (!videoRef.current.fake) {
+      videoRef.current.addEventListener('timeupdate', handleTimeUpdate);
+    }
+  }, [videoRef.current, setProgress]);
+
   return (
     <div
       className={styles['project-detail-item']}
@@ -122,7 +145,16 @@ export const ProjectDetailItem: FC<IProps> = (props: IProps) => {
                 <div
                   style={{
                     width: '1600rem',
-                    position: 'relative'
+                    position: 'relative',
+                    height: '900rem',
+                    transition: '0.3s ease-in-out',
+                    filter: played == true ? 'none' : 'opacity(0.9)'
+                  }}
+                  onMouseEnter={() => {
+                    setVisible(true);
+                  }}
+                  onMouseLeave={() => {
+                    setVisible(false);
                   }}
                   onClick={() => {
                     if (played) {
@@ -135,27 +167,35 @@ export const ProjectDetailItem: FC<IProps> = (props: IProps) => {
                   }}
                 >
                   <div
+                    className={styles['project-detail-stop-icon']}
                     style={{
-                      letterSpacing: '30rem',
-                      fontFamily: 'Sofia Pro Regular',
-                      fontSize: '100rem',
-                      lineHeight: '900rem',
-                      textAlign: 'center',
-                      overflow: 'hidden',
-                      color: '#fff',
-                      position: 'absolute',
-                      width: '100%',
                       display: played == true ? 'none' : 'block'
                     }}
                   >
                     PAUSE
+                  </div>
+                  <div
+                    style={{
+                      transition: '.4s ease',
+                      opacity: visible ? 1 : 0
+                    }}
+                    className={styles['project-detail-video-control-bar']}
+                  >
+                    <div className={styles['bar']}>
+                      <div
+                        className={styles['progress']}
+                        style={{
+                          width: progress + '%'
+                        }}
+                      />
+                    </div>
                   </div>
                   <video
                     src={v.src}
                     ref={videoRef}
                     autoPlay={false}
                     style={{
-                      width: '100%',
+                      width: '1600rem',
                       float: 'left'
                     }}
                   />

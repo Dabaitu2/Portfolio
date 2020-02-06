@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1041,14 +1041,262 @@ const ESCAPE_LOOKUP={'&':'\\u0026','>':'\\u003e','<':'\\u003c','\u2028':'\\u2028
 
 /***/ }),
 
-/***/ 2:
+/***/ "./node_modules/next/document.js":
 /*!***************************************!*\
-  !*** multi next/dist/pages/_document ***!
+  !*** ./node_modules/next/document.js ***!
   \***************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next/dist/pages/_document */"./node_modules/next/dist/pages/_document.js");
+module.exports = __webpack_require__(/*! ./dist/pages/_document */ "./node_modules/next/dist/pages/_document.js")
+
+
+/***/ }),
+
+/***/ "./pages/_document.tsx":
+/*!*****************************!*\
+  !*** ./pages/_document.tsx ***!
+  \*****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var next_document__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next/document */ "./node_modules/next/document.js");
+/* harmony import */ var next_document__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(next_document__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/tomokokawase/Desktop/Portfolio/pages/_document.tsx";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+
+const IP = 'http://144.34.173.162/static/fonts';
+
+class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_0___default.a {
+  render() {
+    return __jsx(next_document__WEBPACK_IMPORTED_MODULE_0__["Html"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 8
+      },
+      __self: this
+    }, __jsx(next_document__WEBPACK_IMPORTED_MODULE_0__["Head"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 9
+      },
+      __self: this
+    }, __jsx("link", {
+      rel: 'preload',
+      href: `${IP}/Sofia Pro Black.otf`,
+      as: "font",
+      type: 'font/otf',
+      crossOrigin: "anonymous",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 10
+      },
+      __self: this
+    }), __jsx("link", {
+      rel: 'preload',
+      href: `${IP}/Sofia Pro Black Italic.otf`,
+      as: "font",
+      type: 'font/otf',
+      crossOrigin: "anonymous",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 17
+      },
+      __self: this
+    }), __jsx("link", {
+      rel: 'preload',
+      href: `${IP}/Sofia Pro Bold.otf`,
+      as: "font",
+      type: 'font/otf',
+      crossOrigin: "anonymous",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 24
+      },
+      __self: this
+    }), __jsx("link", {
+      rel: 'preload',
+      href: `${IP}/Sofia Pro Bold Italic.otf`,
+      as: "font",
+      type: 'font/otf',
+      crossOrigin: "anonymous",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 31
+      },
+      __self: this
+    }), __jsx("link", {
+      rel: 'preload',
+      href: `${IP}/Sofia Pro Extra Light.otf`,
+      as: "font",
+      type: 'font/otf',
+      crossOrigin: "anonymous",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 38
+      },
+      __self: this
+    }), __jsx("link", {
+      rel: 'preload',
+      href: `${IP}/Sofia Pro Extra Light Italic.otf`,
+      as: "font",
+      type: 'font/otf',
+      crossOrigin: "anonymous",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 45
+      },
+      __self: this
+    }), __jsx("link", {
+      rel: 'preload',
+      href: `${IP}/Sofia Pro Italic.otf`,
+      as: "font",
+      type: 'font/otf',
+      crossOrigin: "anonymous",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 52
+      },
+      __self: this
+    }), __jsx("link", {
+      rel: 'preload',
+      href: `${IP}/Sofia Pro Light.otf`,
+      as: "font",
+      type: 'font/otf',
+      crossOrigin: "anonymous",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 59
+      },
+      __self: this
+    }), __jsx("link", {
+      rel: 'preload',
+      href: `${IP}/Sofia Pro Light Italic.otf`,
+      as: "font",
+      type: 'font/otf',
+      crossOrigin: "anonymous",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 66
+      },
+      __self: this
+    }), __jsx("link", {
+      rel: 'preload',
+      href: `${IP}/Sofia Pro Medium.otf`,
+      as: "font",
+      type: 'font/otf',
+      crossOrigin: "anonymous",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 73
+      },
+      __self: this
+    }), __jsx("link", {
+      rel: 'preload',
+      href: `${IP}/Sofia Pro Medium Italic.otf`,
+      as: "font",
+      type: 'font/otf',
+      crossOrigin: "anonymous",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 80
+      },
+      __self: this
+    }), __jsx("link", {
+      rel: 'preload',
+      href: `${IP}/Sofia Pro Regular.otf`,
+      as: "font",
+      type: 'font/otf',
+      crossOrigin: "anonymous",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 87
+      },
+      __self: this
+    }), __jsx("link", {
+      rel: 'preload',
+      href: `${IP}/Sofia Pro Semi Bold.otf`,
+      as: "font",
+      type: 'font/otf',
+      crossOrigin: "anonymous",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 94
+      },
+      __self: this
+    }), __jsx("link", {
+      rel: 'preload',
+      href: `${IP}/Sofia Pro Semi Bold Italic.otf`,
+      as: "font",
+      type: 'font/otf',
+      crossOrigin: "anonymous",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 101
+      },
+      __self: this
+    }), __jsx("link", {
+      rel: 'preload',
+      href: `${IP}/Sofia Pro Semi Ultra Light.otf`,
+      as: "font",
+      type: 'font/otf',
+      crossOrigin: "anonymous",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 108
+      },
+      __self: this
+    }), __jsx("link", {
+      rel: 'preload',
+      href: `${IP}/Sofia Pro Semi Ultra Light.otf`,
+      as: "font",
+      type: 'font/otf',
+      crossOrigin: "anonymous",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 115
+      },
+      __self: this
+    })), __jsx("body", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 123
+      },
+      __self: this
+    }, __jsx(next_document__WEBPACK_IMPORTED_MODULE_0__["Main"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 124
+      },
+      __self: this
+    }), __jsx(next_document__WEBPACK_IMPORTED_MODULE_0__["NextScript"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 125
+      },
+      __self: this
+    })));
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (MyDocument);
+
+/***/ }),
+
+/***/ 1:
+/*!**********************************************!*\
+  !*** multi private-next-pages/_document.tsx ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! private-next-pages/_document.tsx */"./pages/_document.tsx");
 
 
 /***/ }),

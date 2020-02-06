@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { useState } from 'react';\nexport const useForceUpdate = fallBackHandler => {\n  const {\n    0: _,\n    1: setUpdate\n  } = useState(true);\n\n  const forceUpdate = () => {\n    setUpdate(!_);\n  };\n\n  return {\n    forceUpdate\n  };\n};","map":null,"metadata":{},"sourceType":"module"}
