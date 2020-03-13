@@ -502,6 +502,10 @@ var myInfo = [{
 }];
 
 var VideoBlog = __jsx("div", {
+  style: {
+    padding: '30rem 0 30rem',
+    borderBottom: '1rem solid #000000'
+  },
   __source: {
     fileName: _jsxFileName,
     lineNumber: 150
@@ -510,26 +514,67 @@ var VideoBlog = __jsx("div", {
 }, __jsx("h1", {
   style: {
     fontFamily: 'Sofia Pro Regular',
-    fontSize: '20rem'
+    fontSize: '25rem'
   },
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 151
+    lineNumber: 156
   },
   __self: undefined
 }, "IXD VideoBlog + 12440483"), __jsx("video", {
   src: '/static/videos/newnew.mp4',
   autoPlay: false,
+  controls: true,
   style: {
     width: '1600rem',
     marginTop: '20rem'
   },
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 159
+    lineNumber: 164
   },
   __self: undefined
-}));
+}), __jsx("div", {
+  style: {
+    fontSize: '20rem',
+    fontFamily: 'Sofia Pro Medium'
+  },
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 173
+  },
+  __self: undefined
+}, __jsx("p", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 179
+  },
+  __self: undefined
+}, "To learn and create, for better world and meaningful life."), __jsx("p", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 180
+  },
+  __self: undefined
+}, "It is part of design\u2019s responsibility to make communication more effective, especially in the business environment. The Internet has really changed how we work and made design more powerful in business world. For instance, online working software decreases the cost of collaborating, and digital illustrations and motion effect make presentation more vivid. Nearly two years of design internship experience also let me witness mature designers use many methods to make different kinds of cooperators understand their creative ideas and work together for the best result."), __jsx("p", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 191
+  },
+  __self: undefined
+}, "Design can be greatly meaningful and release fullest potential when it comes to social innovation. Once I participated a design activity for local communities in Shanghai. We chatted with residents to know their request, decorated old stairways and helped them build their own public information display system. If I were a little girl who lives there, maybe these colorful paintings could enlighten me to have a dream as an artist or a information manager. These experience led me know how innovation grows in local culture and its design that makes the change.", ' '), __jsx("p", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 201
+  },
+  __self: undefined
+}, "A month ago, China discovered the spread of novel coronavirus. The government advocated people to wear masks, do not go out and work at home. It was time to act quickly and design really played an important role. I designed a set of posters with my classmates. These were notifications to teach people to protect themselves, which were released in Shanghai Railway Station just 5 hours later. And as a UX intern in Capgemini, I also helped the development of a new application for employee health screening. Every staff must submit the health status and location on this app everyday, and managers can check the record of team members to make sure work goes well.", ' '), __jsx("p", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 213
+  },
+  __self: undefined
+}, "To summarize, we have a responsibility to involve in current real world and make positive effect through design.")));
 
 var Profile = function Profile() {
   return __jsx("div", {
@@ -538,19 +583,19 @@ var Profile = function Profile() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 171
+      lineNumber: 222
     },
     __self: this
   }, VideoBlog, __jsx(_Banner__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 177
+      lineNumber: 228
     },
     __self: this
   }), __jsx(_Contact__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 178
+      lineNumber: 229
     },
     __self: this
   }), myInfo.map(function (info) {
@@ -560,7 +605,7 @@ var Profile = function Profile() {
       key: info.title,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 180
+        lineNumber: 231
       },
       __self: this
     });
