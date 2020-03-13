@@ -146,15 +146,38 @@ const myInfo: IMyInfo[] = [
   }
 ];
 
+const VideoBlog = (
+  <div>
+    <h1
+      style={{
+        fontFamily: 'Sofia Pro Regular',
+        fontSize: '20rem'
+      }}
+    >
+      IXD VideoBlog + 12440483
+    </h1>
+    <video
+      src={'/static/videos/newnew.mp4'}
+      autoPlay={false}
+      style={{
+        width: '1600rem',
+        marginTop: '20rem'
+      }}
+    />
+  </div>
+);
 const Profile: React.FC<{}> = () => {
   return (
-    <div style={{
-      width: '1600rem'
-    }}>
+    <div
+      style={{
+        width: '1600rem'
+      }}
+    >
+      {VideoBlog}
       <Banner />
       <Contact />
       {myInfo.map(info => (
-        <Phrase info={info.info} title={info.title} key={info.title}/>
+        <Phrase info={info.info} title={info.title} key={info.title} />
       ))}
     </div>
   );

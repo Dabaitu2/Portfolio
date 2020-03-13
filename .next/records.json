@@ -1,5 +1,5 @@
 {
-  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--7-1!node_modules/less-loader/dist/cjs.js??ref--7-2!pages/projects/dual-layer-solution.less": [
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--7-1!node_modules/less-loader/dist/cjs.js??ref--7-2!pages/index.less": [
     {
       "modules": {
         "byIdentifier": {},
@@ -16,7 +16,7 @@
       }
     }
   ],
-  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--7-1!node_modules/less-loader/dist/cjs.js??ref--7-2!pages/index.less": [
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--7-1!node_modules/less-loader/dist/cjs.js??ref--7-2!pages/projects/dual-layer-solution.less": [
     {
       "modules": {
         "byIdentifier": {},
@@ -118,7 +118,7 @@
       }
     }
   ],
-  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--7-1!node_modules/less-loader/dist/cjs.js??ref--7-2!components/Profile/Banner/index.module.less": [
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--7-1!node_modules/less-loader/dist/cjs.js??ref--7-2!components/Projects/ProjectIndexItem/index.module.less": [
     {
       "modules": {
         "byIdentifier": {},
@@ -169,7 +169,7 @@
       }
     }
   ],
-  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--7-1!node_modules/less-loader/dist/cjs.js??ref--7-2!components/Projects/ProjectIndexItem/index.module.less": [
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--7-1!node_modules/less-loader/dist/cjs.js??ref--7-2!components/Profile/Banner/index.module.less": [
     {
       "modules": {
         "byIdentifier": {},
@@ -220,7 +220,7 @@
       }
     }
   ],
-  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--7-1!node_modules/less-loader/dist/cjs.js??ref--7-2!components/common/Description/index.module.less": [
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--7-1!node_modules/less-loader/dist/cjs.js??ref--7-2!components/common/SubTitle/index.module.less": [
     {
       "modules": {
         "byIdentifier": {},
@@ -237,7 +237,7 @@
       }
     }
   ],
-  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--7-1!node_modules/less-loader/dist/cjs.js??ref--7-2!components/common/SubTitle/index.module.less": [
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--7-1!node_modules/less-loader/dist/cjs.js??ref--7-2!components/common/Description/index.module.less": [
     {
       "modules": {
         "byIdentifier": {},
@@ -295,22 +295,22 @@
       "commons": 0,
       "static/runtime/webpack.js": 1,
       "framework": 2,
-      "58c01ecf9404d858fae5525899acb7ee5b5fb7cd": 3,
-      "fea57fc7b3a943480c17140d203a1f3b7578c8a3": 4,
+      "9a249aa202c566a0641fca1a1d87b9dd069ae1cd": 3,
+      "7f2469cec8f37b0953a8d985a3a9c9de88e7ee07": 4,
       "styles": 5,
       "801a6084": 6,
-      "static/Zm2q1QUCUqrvYAyeEz54X/pages/_app.js": 7,
-      "static/Zm2q1QUCUqrvYAyeEz54X/pages/_error.js": 8,
-      "static/Zm2q1QUCUqrvYAyeEz54X/pages/index.js": 9,
-      "static/Zm2q1QUCUqrvYAyeEz54X/pages/projects/bamboo.js": 10,
-      "static/Zm2q1QUCUqrvYAyeEz54X/pages/projects/cultural-jewelry.js": 11,
-      "static/Zm2q1QUCUqrvYAyeEz54X/pages/projects/dual-layer-solution.js": 12,
-      "static/Zm2q1QUCUqrvYAyeEz54X/pages/projects/dual-layer.js": 13,
-      "static/Zm2q1QUCUqrvYAyeEz54X/pages/projects/emo.js": 14,
-      "static/Zm2q1QUCUqrvYAyeEz54X/pages/projects/endless-form.js": 15,
-      "static/Zm2q1QUCUqrvYAyeEz54X/pages/projects/flyro.js": 16,
-      "static/Zm2q1QUCUqrvYAyeEz54X/pages/projects/string-board.js": 17,
-      "static/Zm2q1QUCUqrvYAyeEz54X/pages/projects/xixi4rhino.js": 18,
+      "static/Lo0bNZXc03oB8i1hrqK__/pages/_app.js": 7,
+      "static/Lo0bNZXc03oB8i1hrqK__/pages/_error.js": 8,
+      "static/Lo0bNZXc03oB8i1hrqK__/pages/index.js": 9,
+      "static/Lo0bNZXc03oB8i1hrqK__/pages/projects/bamboo.js": 10,
+      "static/Lo0bNZXc03oB8i1hrqK__/pages/projects/cultural-jewelry.js": 11,
+      "static/Lo0bNZXc03oB8i1hrqK__/pages/projects/dual-layer-solution.js": 12,
+      "static/Lo0bNZXc03oB8i1hrqK__/pages/projects/dual-layer.js": 13,
+      "static/Lo0bNZXc03oB8i1hrqK__/pages/projects/emo.js": 14,
+      "static/Lo0bNZXc03oB8i1hrqK__/pages/projects/endless-form.js": 15,
+      "static/Lo0bNZXc03oB8i1hrqK__/pages/projects/flyro.js": 16,
+      "static/Lo0bNZXc03oB8i1hrqK__/pages/projects/string-board.js": 17,
+      "static/Lo0bNZXc03oB8i1hrqK__/pages/projects/xixi4rhino.js": 18,
       "static/runtime/main.js": 19,
       "static/runtime/polyfills.js": 20
     },
