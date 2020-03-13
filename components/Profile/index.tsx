@@ -159,6 +159,7 @@ const VideoBlog = (
     <video
       src={'/static/videos/newnew.mp4'}
       autoPlay={false}
+      controls={true}
       style={{
         width: '1600rem',
         marginTop: '20rem'
