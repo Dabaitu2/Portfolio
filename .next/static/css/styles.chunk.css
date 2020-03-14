@@ -764,7 +764,7 @@ body {
   font-size: 18rem;
   color: #000000;
   letter-spacing: 0;
-  line-height: 33.6px;
+  line-height: 24.8rem;
 }
 .project-index-subtitle___YcFUz span {
   display: block;
@@ -783,6 +783,9 @@ body {
 .title-img___1REhK {
   width: 1600rem;
   height: auto !important;
+}
+.detail-img___3wUKC {
+  margin-top: 8rem;
 }
 
 

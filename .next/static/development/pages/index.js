@@ -10866,7 +10866,7 @@ var useResizeCallback = function useResizeCallback(fallBackHandler) {
 
 /***/ }),
 
-/***/ 17:
+/***/ 1:
 /*!**********************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Ftomokokawase%2FDesktop%2FPortfolio%2Fpages%2Findex.tsx ***!
   \**********************************************************************************************************************************/
@@ -10889,5 +10889,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[17,"static/runtime/webpack.js","styles"]]]);
+},[[1,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map

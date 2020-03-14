@@ -14,7 +14,7 @@ import ProjectDetailItem, {
 } from '../../components/Projects/ProjectDetail';
 import Profile from '../../components/Profile';
 import Projects from '../../components/Projects';
-import _styles from './internship.less'
+import _styles from './internship.less';
 const DESIGN_WIDTH = 1920;
 const COMMON_STATIC_PATH = '/static/images/projectDetails/img';
 const Info: ProjectDetailInfoProps = {
@@ -38,13 +38,17 @@ const Info: ProjectDetailInfoProps = {
       className: _styles['title-img']
     }
   ],
-  mainColor: '#2c88d2',
+  mainColor: '#2d5fda',
   title: 'Collection of Internship Work',
-  desc: ['as UX/UI Design Intern as Capgemini', 'and Creative Graphic Designer at Neuni Group'],
-  tags: ['Internship UX/UI Work'],
+  desc: [
+    'as UX/UI Design Intern at Capgemini',
+      'and as Creative Graphic Designer at Neuni Group'
+  ],
+  tags: ['PS.All the displaying work are demo for bidding or published work.'],
   detail_images_meta: {
     dir: '/static/images/projectDetails/intership',
-    num: 10
+    num: 11,
+    className: _styles['detail-img']
   },
   details: ''
 };
@@ -135,9 +139,9 @@ const InnerLayout: React.FC<{}> = () => {
   const { addCallback } = useResizeCallback(fallBackReactive);
   return IsDone && !isLoading ? (
     <div className={styles.layout}>
-      <LayoutHeader menuItems={menuItems}/>
+      <LayoutHeader menuItems={menuItems} />
       <ContentSwitcher>
-        <Profile/>
+        <Profile />
         <ProjectDetailItem {...Info} />
         <Projects />
       </ContentSwitcher>

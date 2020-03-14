@@ -14,6 +14,7 @@ export interface ProjectDetailInfoProps {
   detail_images_meta: {
     dir: string;
     num: number;
+    className?: string;
   };
   links?: {
     src: string
@@ -145,7 +146,7 @@ export const ProjectDetailItem: FC<IProps> = (props: IProps) => {
               preview_sources={[
                 { type: 'image/webp', src: common_file + '-preview.webp' }
               ]}
-              className={styles['project-detail-details-images']}
+              className={`${styles['project-detail-details-images']} ${detail_images_meta.className}`}
             />
           );
         })}

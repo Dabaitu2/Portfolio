@@ -203,23 +203,6 @@
       }
     }
   ],
-  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--7-1!node_modules/less-loader/dist/cjs.js??ref--7-2!components/common/PharseInformation/index.module.less": [
-    {
-      "modules": {
-        "byIdentifier": {},
-        "usedIds": {}
-      },
-      "chunks": {
-        "byName": {
-          "mini-css-extract-plugin": 0
-        },
-        "bySource": {},
-        "usedIds": [
-          0
-        ]
-      }
-    }
-  ],
   "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--7-1!node_modules/less-loader/dist/cjs.js??ref--7-2!components/common/BoldenInformation/index.module.less": [
     {
       "modules": {
@@ -237,7 +220,7 @@
       }
     }
   ],
-  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--7-1!node_modules/less-loader/dist/cjs.js??ref--7-2!components/common/SubTitle/index.module.less": [
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--7-1!node_modules/less-loader/dist/cjs.js??ref--7-2!components/common/PharseInformation/index.module.less": [
     {
       "modules": {
         "byIdentifier": {},
@@ -255,6 +238,23 @@
     }
   ],
   "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--7-1!node_modules/less-loader/dist/cjs.js??ref--7-2!components/common/Description/index.module.less": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--7-1!node_modules/less-loader/dist/cjs.js??ref--7-2!components/common/SubTitle/index.module.less": [
     {
       "modules": {
         "byIdentifier": {},
@@ -314,50 +314,65 @@
       "commons": 0,
       "static/runtime/webpack.js": 1,
       "framework": 2,
-      "6809b064942192e98c742ea9cc29468d6cc5224d": 3,
-      "76f7cea846ad11ccfbc0457c5cb45eaaae68c4ef": 4,
+      "5d7e6bfc609d2d7873d239f0121867be74edaee5": 3,
+      "64452d7d4e5f884d6b01c4bf07d0d31657f52f57": 4,
       "styles": 5,
       "801a6084": 6,
-      "static/lcmkYguq7tohnCr7XdUVp/pages/_app.js": 7,
-      "static/lcmkYguq7tohnCr7XdUVp/pages/_error.js": 8,
-      "static/lcmkYguq7tohnCr7XdUVp/pages/index.js": 9,
-      "static/lcmkYguq7tohnCr7XdUVp/pages/projects/bamboo.js": 10,
-      "static/lcmkYguq7tohnCr7XdUVp/pages/projects/cultural-jewelry.js": 11,
-      "static/lcmkYguq7tohnCr7XdUVp/pages/projects/dual-layer-solution.js": 12,
-      "static/lcmkYguq7tohnCr7XdUVp/pages/projects/dual-layer.js": 13,
-      "static/lcmkYguq7tohnCr7XdUVp/pages/projects/emo.js": 14,
-      "static/lcmkYguq7tohnCr7XdUVp/pages/projects/endless-form.js": 15,
-      "static/lcmkYguq7tohnCr7XdUVp/pages/projects/flyro.js": 16,
-      "static/lcmkYguq7tohnCr7XdUVp/pages/projects/internship.js": 17,
-      "static/lcmkYguq7tohnCr7XdUVp/pages/projects/string-board.js": 18,
-      "static/lcmkYguq7tohnCr7XdUVp/pages/projects/xixi4rhino.js": 19,
+      "static/MyFE2R820Zkcf51_QgQxQ/pages/_app.js": 7,
+      "static/MyFE2R820Zkcf51_QgQxQ/pages/_error.js": 8,
+      "static/MyFE2R820Zkcf51_QgQxQ/pages/index.js": 9,
+      "static/MyFE2R820Zkcf51_QgQxQ/pages/projects/bamboo.js": 10,
+      "static/MyFE2R820Zkcf51_QgQxQ/pages/projects/cultural-jewelry.js": 11,
+      "static/MyFE2R820Zkcf51_QgQxQ/pages/projects/dual-layer-solution.js": 12,
+      "static/MyFE2R820Zkcf51_QgQxQ/pages/projects/dual-layer.js": 13,
+      "static/MyFE2R820Zkcf51_QgQxQ/pages/projects/emo.js": 14,
+      "static/MyFE2R820Zkcf51_QgQxQ/pages/projects/endless-form.js": 15,
+      "static/MyFE2R820Zkcf51_QgQxQ/pages/projects/flyro.js": 16,
+      "static/MyFE2R820Zkcf51_QgQxQ/pages/projects/internship.js": 17,
+      "static/MyFE2R820Zkcf51_QgQxQ/pages/projects/string-board.js": 18,
+      "static/MyFE2R820Zkcf51_QgQxQ/pages/projects/xixi4rhino.js": 19,
       "static/runtime/main.js": 20,
-      "static/runtime/polyfills.js": 21
+      "static/runtime/polyfills.js": 21,
+      "2c2c34f7ec183d108d45f3d66475571ea46fa862": 22,
+      "4010b337e6ceb70279195d306db8667d7c30a220": 23,
+      "static/1r2S_AqyJlENFTDfsB0Ys/pages/_app.js": 24,
+      "static/1r2S_AqyJlENFTDfsB0Ys/pages/_error.js": 25,
+      "static/1r2S_AqyJlENFTDfsB0Ys/pages/index.js": 26,
+      "static/1r2S_AqyJlENFTDfsB0Ys/pages/projects/bamboo.js": 27,
+      "static/1r2S_AqyJlENFTDfsB0Ys/pages/projects/cultural-jewelry.js": 28,
+      "static/1r2S_AqyJlENFTDfsB0Ys/pages/projects/dual-layer-solution.js": 29,
+      "static/1r2S_AqyJlENFTDfsB0Ys/pages/projects/dual-layer.js": 30,
+      "static/1r2S_AqyJlENFTDfsB0Ys/pages/projects/emo.js": 31,
+      "static/1r2S_AqyJlENFTDfsB0Ys/pages/projects/endless-form.js": 32,
+      "static/1r2S_AqyJlENFTDfsB0Ys/pages/projects/flyro.js": 33,
+      "static/1r2S_AqyJlENFTDfsB0Ys/pages/projects/internship.js": 34,
+      "static/1r2S_AqyJlENFTDfsB0Ys/pages/projects/string-board.js": 35,
+      "static/1r2S_AqyJlENFTDfsB0Ys/pages/projects/xixi4rhino.js": 36
     },
     "bySource": {},
     "usedIds": [
       0,
       1,
-      10,
-      11,
-      12,
-      13,
-      14,
-      15,
-      16,
-      17,
-      18,
-      19,
       2,
       20,
       21,
-      3,
-      4,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
       5,
-      6,
-      7,
-      8,
-      9
+      6
     ]
   }
 }

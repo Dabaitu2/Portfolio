@@ -725,14 +725,14 @@ var ProjectDetailItem = function ProjectDetailItem(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 89
+      lineNumber: 90
     },
     __self: this
   }, __jsx("div", {
     className: _index_module_less__WEBPACK_IMPORTED_MODULE_4___default.a['project-detail-images'],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 95
+      lineNumber: 96
     },
     __self: this
   }, images.map(function (image) {
@@ -740,35 +740,35 @@ var ProjectDetailItem = function ProjectDetailItem(props) {
       className: "".concat(_index_module_less__WEBPACK_IMPORTED_MODULE_4___default.a['project-detail-image'], " ").concat(image.className),
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 97
+        lineNumber: 98
       },
       __self: this
     }));
   })), __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 100
+      lineNumber: 101
     },
     __self: this
   }, __jsx("div", {
     className: _index_module_less__WEBPACK_IMPORTED_MODULE_4___default.a['project-detail-title'],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 101
+      lineNumber: 102
     },
     __self: this
   }, title), __jsx("div", {
     className: _index_module_less__WEBPACK_IMPORTED_MODULE_4___default.a['project-detail-subtitle'],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 102
+      lineNumber: 103
     },
     __self: this
   }, desc.map(function (d) {
     return __jsx("span", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 104
+        lineNumber: 105
       },
       __self: this
     }, d);
@@ -779,21 +779,21 @@ var ProjectDetailItem = function ProjectDetailItem(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 108
+      lineNumber: 109
     },
     __self: this
   }, __jsx("div", {
     className: _index_module_less__WEBPACK_IMPORTED_MODULE_4___default.a['project-detail-tags'],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 114
+      lineNumber: 115
     },
     __self: this
   }, tags.map(function (t) {
     return __jsx("span", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 116
+        lineNumber: 117
       },
       __self: this
     }, t);
@@ -801,7 +801,7 @@ var ProjectDetailItem = function ProjectDetailItem(props) {
     className: _index_module_less__WEBPACK_IMPORTED_MODULE_4___default.a['project-detail-details-desc'],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 120
+      lineNumber: 121
     },
     __self: this
   }, details)), __jsx("div", {
@@ -810,7 +810,7 @@ var ProjectDetailItem = function ProjectDetailItem(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 125
+      lineNumber: 126
     },
     __self: this
   }, _babel_runtime_corejs2_core_js_array_from__WEBPACK_IMPORTED_MODULE_0___default()({
@@ -832,10 +832,10 @@ var ProjectDetailItem = function ProjectDetailItem(props) {
         type: 'image/webp',
         src: common_file + '-preview.webp'
       }],
-      className: _index_module_less__WEBPACK_IMPORTED_MODULE_4___default.a['project-detail-details-images'],
+      className: "".concat(_index_module_less__WEBPACK_IMPORTED_MODULE_4___default.a['project-detail-details-images'], " ").concat(detail_images_meta.className),
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 136
+        lineNumber: 137
       },
       __self: this
     });
@@ -846,7 +846,7 @@ var ProjectDetailItem = function ProjectDetailItem(props) {
       target: 'blank',
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 153
+        lineNumber: 154
       },
       __self: this
     }, link.desc);
@@ -876,7 +876,7 @@ var ProjectDetailItem = function ProjectDetailItem(props) {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 158
+        lineNumber: 159
       },
       __self: this
     }, __jsx("div", {
@@ -886,7 +886,7 @@ var ProjectDetailItem = function ProjectDetailItem(props) {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 182
+        lineNumber: 183
       },
       __self: this
     }, "PAUSE"), __jsx("div", {
@@ -897,14 +897,14 @@ var ProjectDetailItem = function ProjectDetailItem(props) {
       className: _index_module_less__WEBPACK_IMPORTED_MODULE_4___default.a['project-detail-video-control-bar'],
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 190
+        lineNumber: 191
       },
       __self: this
     }, __jsx("div", {
       className: _index_module_less__WEBPACK_IMPORTED_MODULE_4___default.a['bar'],
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 197
+        lineNumber: 198
       },
       __self: this
     }, __jsx("div", {
@@ -914,7 +914,7 @@ var ProjectDetailItem = function ProjectDetailItem(props) {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 198
+        lineNumber: 199
       },
       __self: this
     }))), __jsx("video", {
@@ -927,7 +927,7 @@ var ProjectDetailItem = function ProjectDetailItem(props) {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 206
+        lineNumber: 207
       },
       __self: this
     }));
@@ -953,7 +953,7 @@ var ProjectDetailItem = function ProjectDetailItem(props) {
       className: _index_module_less__WEBPACK_IMPORTED_MODULE_4___default.a['project-detail-details-images'],
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 229
+        lineNumber: 230
       },
       __self: this
     });
@@ -10906,13 +10906,14 @@ var Info = {
     alt: 'Internship',
     className: _internship_less__WEBPACK_IMPORTED_MODULE_11___default.a['title-img']
   }],
-  mainColor: '#2c88d2',
+  mainColor: '#2d5fda',
   title: 'Collection of Internship Work',
-  desc: ['as UX/UI Design Intern as Capgemini', 'and Creative Graphic Designer at Neuni Group'],
-  tags: ['Internship UX/UI Work'],
+  desc: ['as UX/UI Design Intern at Capgemini', 'and as Creative Graphic Designer at Neuni Group'],
+  tags: ['PS.All the displaying work are demo for bidding or published work.'],
   detail_images_meta: {
     dir: '/static/images/projectDetails/intership',
-    num: 10
+    num: 11,
+    className: _internship_less__WEBPACK_IMPORTED_MODULE_11___default.a['detail-img']
   },
   details: ''
 };
@@ -10993,38 +10994,38 @@ var InnerLayout = function InnerLayout() {
     className: _index_less__WEBPACK_IMPORTED_MODULE_2___default.a.layout,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 137
+      lineNumber: 141
     },
     __self: this
   }, __jsx(_components_LayoutHeader__WEBPACK_IMPORTED_MODULE_3__["default"], {
     menuItems: menuItems,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 138
+      lineNumber: 142
     },
     __self: this
   }), __jsx(_components_ContentSwitcher__WEBPACK_IMPORTED_MODULE_5__["ContentSwitcher"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 139
+      lineNumber: 143
     },
     __self: this
   }, __jsx(_components_Profile__WEBPACK_IMPORTED_MODULE_9__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 140
+      lineNumber: 144
     },
     __self: this
   }), __jsx(_components_Projects_ProjectDetail__WEBPACK_IMPORTED_MODULE_8__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, Info, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 141
+      lineNumber: 145
     },
     __self: this
   })), __jsx(_components_Projects__WEBPACK_IMPORTED_MODULE_10__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 142
+      lineNumber: 146
     },
     __self: this
   })), __jsx(_components_LayoutHeader__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -11034,7 +11035,7 @@ var InnerLayout = function InnerLayout() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 144
+      lineNumber: 148
     },
     __self: this
   })) : null;
@@ -11044,13 +11045,13 @@ var Layout = function Layout() {
   return __jsx(_utils_hooks_useCurrentTab__WEBPACK_IMPORTED_MODULE_4__["CurrentTabProvider"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 156
+      lineNumber: 160
     },
     __self: this
   }, __jsx(InnerLayout, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 157
+      lineNumber: 161
     },
     __self: this
   }));
@@ -11363,7 +11364,7 @@ var useResizeCallback = function useResizeCallback(fallBackHandler) {
 
 /***/ }),
 
-/***/ 16:
+/***/ 14:
 /*!***********************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fprojects%2Finternship&absolutePagePath=%2FUsers%2Ftomokokawase%2FDesktop%2FPortfolio%2Fpages%2Fprojects%2Finternship.tsx ***!
   \***********************************************************************************************************************************************************************/
@@ -11386,5 +11387,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[16,"static/runtime/webpack.js","styles"]]]);
+},[[14,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=internship.js.map

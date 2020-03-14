@@ -307,8 +307,8 @@ const PROJECT_INFO: ProjectInfoProps[] = [
     title: 'Internship Work',
     href: 'internship',
     desc: [
-      'as UX/UI Design Intern as Capgemini',
-      'and Creative Graphic Designer at Neuni Group'
+      'as UX/UI Design Intern at Capgemini',
+      'and as Creative Graphic Designer at Neuni Group'
     ],
     tags: [''],
     images: [
