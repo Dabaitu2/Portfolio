@@ -173,10 +173,12 @@ const VideoBlog = (
     <div
       style={{
         fontSize: '20rem',
-        fontFamily: 'Sofia Pro Medium'
+        fontFamily: 'Sofia Pro Light',
+        letterSpacing: '0.5rem',
+        fontStyle: 'italic'
       }}
     >
-      <p>To learn and create, for better world and meaningful life.</p>
+      <p>"To learn and create, for better world and meaningful life.</p>
       <p>
         It is part of design’s responsibility to make communication more
         effective, especially in the business environment. The Internet has
@@ -212,7 +214,7 @@ const VideoBlog = (
       </p>
       <p>
         To summarize, we have a responsibility to involve in current real world
-        and make positive effect through design.
+        and make positive effect through design."
       </p>
     </div>
   </div>

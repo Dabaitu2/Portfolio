@@ -94,7 +94,7 @@ export const ProjectDetailItem: FC<IProps> = (props: IProps) => {
     >
       <div className={styles['project-detail-images']}>
         {images.map(image => (
-          <LazyLoadImg {...image} className={styles['project-detail-image']} />
+          <LazyLoadImg {...image} className={`${styles['project-detail-image']} ${image.className}`} />
         ))}
       </div>
       <div>

@@ -24,17 +24,17 @@ const Info: ProjectDetailInfoProps = {
   details: '',
   images: [
     {
-      src: COMMON_STATIC_PATH + '8.jpg',
+      src: COMMON_STATIC_PATH + '9.jpg',
       sources: [
         {
-          src: COMMON_STATIC_PATH + '8.webp',
+          src: COMMON_STATIC_PATH + '9.webp',
           type: 'image/webp'
         }
       ],
-      preview_src: COMMON_STATIC_PATH + '8-preview.jpg',
+      preview_src: COMMON_STATIC_PATH + '9-preview.jpg',
       preview_sources: [
         {
-          src: COMMON_STATIC_PATH + '8-preview.webp',
+          src: COMMON_STATIC_PATH + '9-preview.webp',
           type: 'image/webp'
         }
       ],

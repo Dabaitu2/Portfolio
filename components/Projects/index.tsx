@@ -304,10 +304,13 @@ const PROJECT_INFO: ProjectInfoProps[] = [
     ]
   },
   {
-    title: 'Cultural Jewelry',
-    href: 'cultural-jewelry',
-    desc: ['a set of jewelry design inspired by', 'Chinese Bronze in Shanghai Museum'],
-    tags: ['Integrated product development'],
+    title: 'Internship Work',
+    href: 'internship',
+    desc: [
+      'as UX/UI Design Intern as Capgemini',
+      'and Creative Graphic Designer at Neuni Group'
+    ],
+    tags: [''],
     images: [
       {
         src: COMMON_STATIC_PATH + '15.jpg',
@@ -324,7 +327,7 @@ const PROJECT_INFO: ProjectInfoProps[] = [
             type: 'image/webp'
           }
         ],
-        alt: 'String board'
+        alt: 'Internship Work'
       },
       {
         src: COMMON_STATIC_PATH + '16.jpg',
@@ -338,6 +341,51 @@ const PROJECT_INFO: ProjectInfoProps[] = [
         preview_sources: [
           {
             src: COMMON_STATIC_PATH + '16-preview.webp',
+            type: 'image/webp'
+          }
+        ],
+        alt: 'Internship Work'
+      }
+    ]
+  },
+  {
+    title: 'Cultural Jewelry',
+    href: 'cultural-jewelry',
+    desc: [
+      'a set of jewelry design inspired by',
+      'Chinese Bronze in Shanghai Museum'
+    ],
+    tags: ['Integrated product development'],
+    images: [
+      {
+        src: COMMON_STATIC_PATH + '17.jpg',
+        sources: [
+          {
+            src: COMMON_STATIC_PATH + '17.webp',
+            type: 'image/webp'
+          }
+        ],
+        preview_src: COMMON_STATIC_PATH + '17-preview.jpg',
+        preview_sources: [
+          {
+            src: COMMON_STATIC_PATH + '17-preview.webp',
+            type: 'image/webp'
+          }
+        ],
+        alt: 'String board'
+      },
+      {
+        src: COMMON_STATIC_PATH + '18.jpg',
+        sources: [
+          {
+            src: COMMON_STATIC_PATH + '18.webp',
+            type: 'image/webp'
+          }
+        ],
+        preview_src: COMMON_STATIC_PATH + '18-preview.jpg',
+        preview_sources: [
+          {
+            src: COMMON_STATIC_PATH + '18-preview.webp',
             type: 'image/webp'
           }
         ],

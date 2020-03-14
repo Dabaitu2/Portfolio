@@ -537,7 +537,9 @@ var VideoBlog = __jsx("div", {
 }), __jsx("div", {
   style: {
     fontSize: '20rem',
-    fontFamily: 'Sofia Pro Medium'
+    fontFamily: 'Sofia Pro Light',
+    letterSpacing: '0.5rem',
+    fontStyle: 'italic'
   },
   __source: {
     fileName: _jsxFileName,
@@ -547,34 +549,34 @@ var VideoBlog = __jsx("div", {
 }, __jsx("p", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 179
+    lineNumber: 181
   },
   __self: undefined
-}, "To learn and create, for better world and meaningful life."), __jsx("p", {
+}, "\"To learn and create, for better world and meaningful life."), __jsx("p", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 180
+    lineNumber: 182
   },
   __self: undefined
 }, "It is part of design\u2019s responsibility to make communication more effective, especially in the business environment. The Internet has really changed how we work and made design more powerful in business world. For instance, online working software decreases the cost of collaborating, and digital illustrations and motion effect make presentation more vivid. Nearly two years of design internship experience also let me witness mature designers use many methods to make different kinds of cooperators understand their creative ideas and work together for the best result."), __jsx("p", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 191
+    lineNumber: 193
   },
   __self: undefined
 }, "Design can be greatly meaningful and release fullest potential when it comes to social innovation. Once I participated a design activity for local communities in Shanghai. We chatted with residents to know their request, decorated old stairways and helped them build their own public information display system. If I were a little girl who lives there, maybe these colorful paintings could enlighten me to have a dream as an artist or a information manager. These experience led me know how innovation grows in local culture and its design that makes the change.", ' '), __jsx("p", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 201
+    lineNumber: 203
   },
   __self: undefined
 }, "A month ago, China discovered the spread of novel coronavirus. The government advocated people to wear masks, do not go out and work at home. It was time to act quickly and design really played an important role. I designed a set of posters with my classmates. These were notifications to teach people to protect themselves, which were released in Shanghai Railway Station just 5 hours later. And as a UX intern in Capgemini, I also helped the development of a new application for employee health screening. Every staff must submit the health status and location on this app everyday, and managers can check the record of team members to make sure work goes well.", ' '), __jsx("p", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 213
+    lineNumber: 215
   },
   __self: undefined
-}, "To summarize, we have a responsibility to involve in current real world and make positive effect through design.")));
+}, "To summarize, we have a responsibility to involve in current real world and make positive effect through design.\"")));
 
 var Profile = function Profile() {
   return __jsx("div", {
@@ -583,19 +585,19 @@ var Profile = function Profile() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 222
+      lineNumber: 224
     },
     __self: this
   }, VideoBlog, __jsx(_Banner__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 228
+      lineNumber: 230
     },
     __self: this
   }), __jsx(_Contact__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 229
+      lineNumber: 231
     },
     __self: this
   }), myInfo.map(function (info) {
@@ -605,7 +607,7 @@ var Profile = function Profile() {
       key: info.title,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 231
+        lineNumber: 233
       },
       __self: this
     });
@@ -940,10 +942,10 @@ var PROJECT_INFO = [{
     alt: 'String board'
   }]
 }, {
-  title: 'Cultural Jewelry',
-  href: 'cultural-jewelry',
-  desc: ['a set of jewelry design inspired by', 'Chinese Bronze in Shanghai Museum'],
-  tags: ['Integrated product development'],
+  title: 'Internship Work',
+  href: 'internship',
+  desc: ['as UX/UI Design Intern as Capgemini', 'and Creative Graphic Designer at Neuni Group'],
+  tags: [''],
   images: [{
     src: COMMON_STATIC_PATH + '15.jpg',
     sources: [{
@@ -955,7 +957,7 @@ var PROJECT_INFO = [{
       src: COMMON_STATIC_PATH + '15-preview.webp',
       type: 'image/webp'
     }],
-    alt: 'String board'
+    alt: 'Internship Work'
   }, {
     src: COMMON_STATIC_PATH + '16.jpg',
     sources: [{
@@ -965,6 +967,36 @@ var PROJECT_INFO = [{
     preview_src: COMMON_STATIC_PATH + '16-preview.jpg',
     preview_sources: [{
       src: COMMON_STATIC_PATH + '16-preview.webp',
+      type: 'image/webp'
+    }],
+    alt: 'Internship Work'
+  }]
+}, {
+  title: 'Cultural Jewelry',
+  href: 'cultural-jewelry',
+  desc: ['a set of jewelry design inspired by', 'Chinese Bronze in Shanghai Museum'],
+  tags: ['Integrated product development'],
+  images: [{
+    src: COMMON_STATIC_PATH + '17.jpg',
+    sources: [{
+      src: COMMON_STATIC_PATH + '17.webp',
+      type: 'image/webp'
+    }],
+    preview_src: COMMON_STATIC_PATH + '17-preview.jpg',
+    preview_sources: [{
+      src: COMMON_STATIC_PATH + '17-preview.webp',
+      type: 'image/webp'
+    }],
+    alt: 'String board'
+  }, {
+    src: COMMON_STATIC_PATH + '18.jpg',
+    sources: [{
+      src: COMMON_STATIC_PATH + '18.webp',
+      type: 'image/webp'
+    }],
+    preview_src: COMMON_STATIC_PATH + '18-preview.jpg',
+    preview_sources: [{
+      src: COMMON_STATIC_PATH + '18-preview.webp',
       type: 'image/webp'
     }],
     alt: 'String board'
@@ -979,14 +1011,14 @@ var Projects = function Projects(props) {
     className: _index_module_less__WEBPACK_IMPORTED_MODULE_2___default.a['main'],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 355
+      lineNumber: 403
     },
     __self: this
   }, PROJECT_INFO.map(function (info) {
     return __jsx(_ProjectIndexItem__WEBPACK_IMPORTED_MODULE_3__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, info, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 360
+        lineNumber: 408
       },
       __self: this
     }));
@@ -10834,7 +10866,7 @@ var useResizeCallback = function useResizeCallback(fallBackHandler) {
 
 /***/ }),
 
-/***/ 1:
+/***/ 17:
 /*!**********************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Ftomokokawase%2FDesktop%2FPortfolio%2Fpages%2Findex.tsx ***!
   \**********************************************************************************************************************************/
@@ -10857,5 +10889,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js","styles"]]]);
+},[[17,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map
